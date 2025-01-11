@@ -12,7 +12,7 @@ config_version=5
 
 config/name="PinThree"
 config/tags=PackedStringArray("mpf_0.80")
-run/main_scene="res://addons/mpf-gmc/slides/window.tscn"
+run/main_scene="res://addons/mpf-gmc/slides/window2.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
@@ -22,8 +22,14 @@ MPF="*res://addons/mpf-gmc/mpf_gmc.gd"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=1024
+window/size/viewport_width=2720
+window/size/viewport_height=1280
+window/size/mode=3
+window/size/initial_position_type=0
+window/size/resizable=false
+window/size/borderless=true
+window/size/window_width_override=2720
+window/size/window_height_override=1280
 
 [editor_plugins]
 
@@ -31,4 +37,5 @@ enabled=PackedStringArray("res://addons/mpf-gmc/plugin.cfg")
 
 [rendering]
 
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
