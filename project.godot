@@ -30,6 +30,7 @@ window/size/resizable=false
 window/size/borderless=true
 window/size/window_width_override=2720
 window/size/window_height_override=1280
+window/subwindows/embed_subwindows=false
 
 [editor_plugins]
 

@@ -3,10 +3,31 @@
 # Attract mode that starts when the machine boots up, stops
 # whenever a game is started, and re-starts after the game ends.
 
+mode_settings:
+    selectable_items:
+        - title
+        - game_over
+        - credits
+        - last_scores
+        - featured_bands
+        - high_scores
+        - mpf_logo
+    next_item_events: s_flipper_right_active
+    previous_item_events: s_flipper_left_active
+
 slide_player:
-  mode_attract_started: attract
+    mode_attract_started:
+        attract_primary_slide:
+            target: primary
+        attract_mini_slide:
+            target: mini-display
 
 sound_player:
   mode_attract_started:
-    themysteriousreturnintro:
+#    themysteriousreturnintro:
+#    hauntedcastleserenade_intro:
+    lost23prequel_intro:
+#    preludeofdoom_intro:
+#    preludetothemoon_intro:
+#    theguillotinesuite_intro:
       bus: music

@@ -1,0 +1,140 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwuo86h2hosgh"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_a8ewj"]
+[ext_resource type="Texture2D" uid="uid://icokvv0n76gt" path="res://images/primary/Botb BBv2 (2).jpeg" id="2_tslr1"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="3_5aq0u"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_yfscn"]
+[ext_resource type="Texture2D" uid="uid://dounln3l35d26" path="res://addons/mpf-gmc/images/logo_mpf.png" id="5_21jtv"]
+
+[node name="AttractPrimarySlide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_a8ewj")
+
+[node name="BB Background" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(960, 540)
+texture = ExtResource("2_tslr1")
+
+[node name="MPFCarousel" type="Node2D" parent="."]
+show_behind_parent = true
+script = ExtResource("3_5aq0u")
+carousel_name = "attract"
+
+[node name="game_over" type="RichTextLabel" parent="MPFCarousel"]
+offset_left = 710.0
+offset_top = 875.0
+offset_right = 1210.0
+offset_bottom = 985.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.34902, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 80
+text = "Game Over!"
+fit_content = true
+
+[node name="title" type="RichTextLabel" parent="MPFCarousel"]
+offset_left = 87.0
+offset_top = 875.0
+offset_right = 1847.0
+offset_bottom = 988.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.34902, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 80
+text = "Welcome to The Battle Of The Bands Pinball!"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="featured_bands" type="RichTextLabel" parent="MPFCarousel"]
+top_level = true
+offset_left = 556.0
+offset_top = 742.0
+offset_right = 1413.0
+offset_bottom = 864.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.0156863, 0.976471, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/bold_italics_font_size = 80
+theme_override_font_sizes/normal_font_size = 80
+theme_override_font_sizes/bold_font_size = 80
+text = "Featuring Music By:
+"
+fit_content = true
+
+[node name="bands" type="RichTextLabel" parent="MPFCarousel/featured_bands"]
+top_level = true
+layout_mode = 1
+offset_left = 36.0
+offset_top = 838.0
+offset_right = 1893.0
+offset_bottom = 1058.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.0156863, 0.976471, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 80
+text = "Axel Rudi Pell, Boston, Dio, Dokken, Disturbed, Five Finger Death Punch, Ozzy, Rush, and More!
+"
+fit_content = true
+
+[node name="credits" type="Label" parent="MPFCarousel"]
+top_level = true
+offset_top = 875.0
+offset_right = 1920.0
+offset_bottom = 985.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.0156863, 0.976471, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 80
+horizontal_alignment = 1
+script = ExtResource("4_yfscn")
+variable_type = 2
+variable_name = "credits_string"
+
+[node name="mpf_logo" type="Sprite2D" parent="MPFCarousel"]
+position = Vector2(940, 894)
+scale = Vector2(2, 1.775)
+texture = ExtResource("5_21jtv")
+
+[node name="last_scores" type="RichTextLabel" parent="MPFCarousel"]
+offset_left = 609.0
+offset_top = 965.0
+offset_right = 1356.0
+offset_bottom = 1075.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.34902, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 80
+text = "Last Game Scores:
+"
+fit_content = true
+
+[node name="high_scores" type="RichTextLabel" parent="MPFCarousel"]
+offset_left = 689.0
+offset_top = 965.0
+offset_right = 1259.0
+offset_bottom = 1075.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.34902, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 80
+text = "HIGH SCORES:
+"
+fit_content = true
+scroll_active = false
+shortcut_keys_enabled = false

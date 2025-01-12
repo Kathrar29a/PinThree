@@ -20,7 +20,7 @@ initial_slide = ExtResource("3_an3ko")
 
 [node name="Window" type="Window" parent="."]
 mode = 3
-position = Vector2i(1920, 0)
+position = Vector2i(1775, 0)
 size = Vector2i(800, 1280)
 transient = true
 unresizable = true
