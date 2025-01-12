@@ -3,10 +3,10 @@
 
 switches:
   # Cabinet Switches
-  s_flipper_left:
+  s_flippers_left:
     number:
     tags: left_flipper
-  s_flipper_right:
+  s_flippers_right:
     number:
     tags: right_flipper
   # Trough Switches
