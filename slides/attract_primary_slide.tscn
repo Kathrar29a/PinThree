@@ -22,7 +22,6 @@ script = ExtResource("3_5aq0u")
 carousel_name = "attract"
 
 [node name="game_over" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 710.0
 offset_top = 875.0
 offset_right = 1210.0
@@ -37,7 +36,6 @@ text = "Game Over!"
 fit_content = true
 
 [node name="title" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 87.0
 offset_top = 875.0
 offset_right = 1847.0
@@ -54,7 +52,6 @@ scroll_active = false
 shortcut_keys_enabled = false
 
 [node name="featured_bands" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 top_level = true
 offset_left = 556.0
 offset_top = 742.0
@@ -90,7 +87,6 @@ text = "Axel Rudi Pell, Boston, Dio, Dokken, Disturbed, Five Finger Death Punch,
 fit_content = true
 
 [node name="credits" type="Label" parent="MPFCarousel"]
-visible = false
 top_level = true
 offset_top = 875.0
 offset_right = 1920.0
@@ -108,13 +104,11 @@ variable_type = 2
 variable_name = "credits_string"
 
 [node name="mpf_logo" type="Sprite2D" parent="MPFCarousel"]
-visible = false
 position = Vector2(940, 894)
 scale = Vector2(2, 1.775)
 texture = ExtResource("5_21jtv")
 
 [node name="last_scores_1p" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 588.0
 offset_top = 713.0
 offset_right = 1335.0
@@ -130,8 +124,8 @@ text = "Last Game Scores:
 fit_content = true
 
 [node name="P1Text" type="RichTextLabel" parent="MPFCarousel/last_scores_1p"]
-visible = false
 top_level = true
+layout_mode = 0
 offset_left = 100.0
 offset_top = 810.0
 offset_right = 440.0
@@ -146,6 +140,7 @@ text = "Player 1:"
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_1p/P1Text"]
 top_level = true
+layout_mode = 0
 offset_left = 500.0
 offset_top = 810.0
 offset_right = 929.0
@@ -164,7 +159,6 @@ comma_separate = true
 min_digits = 2
 
 [node name="last_scores_2p" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 588.0
 offset_top = 713.0
 offset_right = 1335.0
@@ -181,6 +175,7 @@ fit_content = true
 
 [node name="P1Text" type="RichTextLabel" parent="MPFCarousel/last_scores_2p"]
 top_level = true
+layout_mode = 0
 offset_left = 100.0
 offset_top = 810.0
 offset_right = 440.0
@@ -195,6 +190,7 @@ text = "Player 1:"
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_2p/P1Text"]
 top_level = true
+layout_mode = 0
 offset_left = 500.0
 offset_top = 810.0
 offset_right = 929.0
@@ -214,6 +210,7 @@ min_digits = 2
 
 [node name="P2Text" type="RichTextLabel" parent="MPFCarousel/last_scores_2p"]
 top_level = true
+layout_mode = 0
 offset_left = 1050.0
 offset_top = 810.0
 offset_right = 1390.0
@@ -228,6 +225,7 @@ text = "Player 2:"
 
 [node name="player2_score" type="Label" parent="MPFCarousel/last_scores_2p/P2Text"]
 top_level = true
+layout_mode = 0
 offset_left = 1430.0
 offset_top = 810.0
 offset_right = 1859.0
@@ -246,7 +244,6 @@ comma_separate = true
 min_digits = 2
 
 [node name="last_scores_3p" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 588.0
 offset_top = 713.0
 offset_right = 1335.0
@@ -263,6 +260,7 @@ fit_content = true
 
 [node name="P1Text" type="RichTextLabel" parent="MPFCarousel/last_scores_3p"]
 top_level = true
+layout_mode = 0
 offset_left = 100.0
 offset_top = 810.0
 offset_right = 440.0
@@ -277,6 +275,7 @@ text = "Player 1:"
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_3p/P1Text"]
 top_level = true
+layout_mode = 0
 offset_left = 500.0
 offset_top = 810.0
 offset_right = 929.0
@@ -296,6 +295,7 @@ min_digits = 2
 
 [node name="P2Text" type="RichTextLabel" parent="MPFCarousel/last_scores_3p"]
 top_level = true
+layout_mode = 0
 offset_left = 1050.0
 offset_top = 810.0
 offset_right = 1390.0
@@ -310,6 +310,7 @@ text = "Player 2:"
 
 [node name="player2_score" type="Label" parent="MPFCarousel/last_scores_3p/P2Text"]
 top_level = true
+layout_mode = 0
 offset_left = 1430.0
 offset_top = 810.0
 offset_right = 1859.0
@@ -329,6 +330,7 @@ min_digits = 2
 
 [node name="P3Text" type="RichTextLabel" parent="MPFCarousel/last_scores_3p"]
 top_level = true
+layout_mode = 0
 offset_left = 100.0
 offset_top = 930.0
 offset_right = 440.0
@@ -343,6 +345,7 @@ text = "Player 3:"
 
 [node name="player3_score" type="Label" parent="MPFCarousel/last_scores_3p/P3Text"]
 top_level = true
+layout_mode = 0
 offset_left = 500.0
 offset_top = 930.0
 offset_right = 929.0
@@ -361,7 +364,6 @@ comma_separate = true
 min_digits = 2
 
 [node name="last_scores_4p" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 588.0
 offset_top = 713.0
 offset_right = 1335.0
@@ -378,6 +380,7 @@ fit_content = true
 
 [node name="P1Text" type="RichTextLabel" parent="MPFCarousel/last_scores_4p"]
 top_level = true
+layout_mode = 0
 offset_left = 100.0
 offset_top = 810.0
 offset_right = 440.0
@@ -392,6 +395,7 @@ text = "Player 1:"
 
 [node name="player1_score" type="Label" parent="MPFCarousel/last_scores_4p/P1Text"]
 top_level = true
+layout_mode = 0
 offset_left = 500.0
 offset_top = 810.0
 offset_right = 929.0
@@ -411,6 +415,7 @@ min_digits = 2
 
 [node name="P2Text" type="RichTextLabel" parent="MPFCarousel/last_scores_4p"]
 top_level = true
+layout_mode = 0
 offset_left = 1050.0
 offset_top = 810.0
 offset_right = 1390.0
@@ -425,6 +430,7 @@ text = "Player 2:"
 
 [node name="player2_score" type="Label" parent="MPFCarousel/last_scores_4p/P2Text"]
 top_level = true
+layout_mode = 0
 offset_left = 1430.0
 offset_top = 810.0
 offset_right = 1859.0
@@ -444,6 +450,7 @@ min_digits = 2
 
 [node name="P3Text" type="RichTextLabel" parent="MPFCarousel/last_scores_4p"]
 top_level = true
+layout_mode = 0
 offset_left = 100.0
 offset_top = 930.0
 offset_right = 440.0
@@ -458,6 +465,7 @@ text = "Player 3:"
 
 [node name="player3_score" type="Label" parent="MPFCarousel/last_scores_4p/P3Text"]
 top_level = true
+layout_mode = 0
 offset_left = 500.0
 offset_top = 930.0
 offset_right = 929.0
@@ -477,6 +485,7 @@ min_digits = 2
 
 [node name="P4Text" type="RichTextLabel" parent="MPFCarousel/last_scores_4p"]
 top_level = true
+layout_mode = 0
 offset_left = 1050.0
 offset_top = 930.0
 offset_right = 1390.0
@@ -491,6 +500,7 @@ text = "Player 4:"
 
 [node name="player4_score" type="Label" parent="MPFCarousel/last_scores_4p/P4Text"]
 top_level = true
+layout_mode = 0
 offset_left = 1430.0
 offset_top = 930.0
 offset_right = 1859.0
@@ -509,7 +519,6 @@ comma_separate = true
 min_digits = 2
 
 [node name="high_scores" type="RichTextLabel" parent="MPFCarousel"]
-visible = false
 offset_left = 689.0
 offset_top = 965.0
 offset_right = 1259.0
