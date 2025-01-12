@@ -12,7 +12,7 @@ mode_settings:
         - featured_bands
         - high_scores
         - mpf_logo
-    next_item_events: s_flipper_right_active, timer_attract_carouseel_timer_complete
+    next_item_events: s_flipper_right_active, timer_attract_carousel_timer_complete
     previous_item_events: s_flipper_left_active
 
 slide_player:
@@ -42,6 +42,7 @@ timers:
               action: restart
             - event: flipper_cradle
               action: stop
-            - evewnt: flipper_cradlee_release
+            - event: flipper_cradle_release
               action: restart
-            
+            - event: timer_attract_carousel_timer_complete
+              action: restart
