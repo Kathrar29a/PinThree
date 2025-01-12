@@ -1,5 +1,6 @@
 #config_version=6
 
+
 switches:
   # Cabinet Switches
   s_flipper_left:
