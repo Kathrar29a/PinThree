@@ -1,0 +1,47 @@
+#config_version=6
+
+# Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
+
+# INSERTS are GRB
+# GI are RGB
+
+lights:
+#    l_shooterRod:
+#       previous: l_gi_1 #number: 1-0-26
+#        type: grb
+#        subtype: led
+
+
+ #   l_gi_1:
+ #       number: 0-0-49
+ #       color_correction_profile: corr_profile_gi
+ #       subtype: led
+ #       tags: gi
+
+    l_ballinplay1:
+         number: "1-0-0"
+         type: grb
+         subtype: led
+         tags: group1, gi
+
+
+    l_ballinplay2:
+         number: "1-0-1"
+         type: grb
+         subtype: led
+         tags: group1
+
+light_player:
+   led_code:
+      l_ballinplay1: "DFFF00"
+   led_off:
+      l_ballinplay1: off
+      l_ballinplay2: off
+   led_name:
+      l_ballinplay2: LightSalmon
+   group_light:
+      group1: green
+   led_fade:
+      l_ballinplay1:
+        color: slateblue
+        fade: 2000ms

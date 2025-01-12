@@ -1,0 +1,16 @@
+#config_version=6
+
+# Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
+
+# Normal Events
+
+# q:
+#    event: led_off
+#  w:
+#    event: led_code
+#  e:
+#    event: led_name
+#  r:
+#    event: group_light
+#  t:
+#    event: led_fade

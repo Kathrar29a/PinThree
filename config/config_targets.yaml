@@ -1,0 +1,30 @@
+#config_version=6
+
+# Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
+
+# Targets Config
+
+drop_targets:
+    3bDrop_right_target:
+         switch: s_3b_drop_right_opto
+    3bDrop_middle_target:
+         switch: s_3b_drop_middle_opto
+    3bDrop_left_target:
+         switch: s_3b_drop_left_opto
+
+
+drop_target_banks:
+    3bd_bank:
+        drop_targets: 3bDrop_right_target, 3bDrop_middle_target, 3bDrop_left_target
+        reset_coil: c_drop_target_reset
+        reset_coil_max_wait_ms: 150
+        reset_events:
+           machine_reset_phase_3: 0
+           ball_starting: 0
+#           mode_punchOutAward_started: 0
+#           mode_punchOutAward_stopped: 0
+#           mode_precisionAward_started: 0
+#           mode_multiball_ttSTD_started: 0
+#           mode_multiball_ttSTD_stopped: 0
+           resetDrops: 500ms
+#

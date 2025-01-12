@@ -1,0 +1,18 @@
+#config_version=6
+
+# Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
+
+#  For Keyboard Setup, Enter in gmc.cfg now, instead of here
+
+
+#unclear if this is needed for testing
+
+#virtual_platform_start_active_switches:
+#  - s_m8_trough1
+#  - s_m16_trough2
+#  - s_m24_trough3
+#  - s_m32_trough4
+#  - s_m40_trough5
+#  - s_m48_trough6
+#  - s_m56_trough7
+#  - s_trough8_opto

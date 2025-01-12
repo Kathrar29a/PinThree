@@ -9,3 +9,36 @@ ball_devices:
     eject_coil: c_trough_eject
     eject_targets: bd_plunger
     tags: trough, home, drain
+
+#CC from V1.3
+ball_devices: #adjust pulse times in coils section (except Jam coil)    version 1.2
+    bd_trough:
+        ball_switches: s_m8_trough1, s_m16_trough2, s_m24_trough3, s_m32_trough4, s_m40_trough5, s_m48_trough6, s_m56_trough7, s_trough8_opto, s_trough_jam_opto
+        eject_coil: c_trough_eject
+        tags: trough, home, drain
+        jam_switch: s_trough_jam_opto
+        eject_coil_jam_pulse: 15ms
+        eject_targets: bd_plunger
+        eject_timeouts: 3s
+    bd_plunger:
+        ball_switches: s_m64_plunger_lane
+        eject_coil: c_plunger
+        mechanical_eject: true
+        eject_timeouts: 5s
+        player_controlled_eject_event: s_launch_button_active
+    bd_left_saucer:
+        ball_switches: s_m6_left_saucer
+        eject_coil: c_left_saucer
+        eject_timeouts: 500ms
+    bd_xtraball_saucer:
+        ball_switches: s_m59_xtraball_saucer
+        eject_coil: c_xtraball_saucer
+        eject_timeouts: 500ms
+    bd_right_saucer:
+        ball_switches: s_m30_right_saucer
+        eject_coil: c_right_saucer
+        eject_timeouts: 500ms
+    bd_right_scoop:
+        ball_switches: s_right_scoop_opto
+        eject_coil: c_right_scoop
+        eject_timeouts: 3s

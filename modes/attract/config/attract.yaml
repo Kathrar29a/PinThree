@@ -1,5 +1,7 @@
 #config_version=6
 
+# Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
+
 # Attract mode that starts when the machine boots up, stops
 # whenever a game is started, and re-starts after the game ends.
 
@@ -15,8 +17,8 @@ mode_settings:
         - featured_bands
         - high_scores
         - mpf_logo
-    next_item_events: s_flipper_right_active, timer_attract_carousel_timer_complete
-    previous_item_events: s_flipper_left_active
+    next_item_events: s_right_flipper_lower_active, timer_attract_carousel_timer_complete
+    previous_item_events: s_left_flipper_lower_active
 
 slide_player:
     mode_attract_started:
@@ -49,7 +51,7 @@ timers:
               action: restart
             - event: timer_attract_carousel_timer_complete
               action: restart
-            - event: s_left_flipper_active
+            - event: s_left_flipper_lower_active
               action: restart
-            - event: s_right_flipper_active
+            - event: s_right_flipper_lower_active
               action: restart
