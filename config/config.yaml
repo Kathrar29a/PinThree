@@ -19,9 +19,9 @@ config:
   - config_events.yaml
   - config_lights.yaml
   - config_lights_test.yaml
-  - targets_config.yaml
-  - shots_config.yaml
-  - shows_config.yaml
+  - config_targets.yaml
+  - config_shots.yaml
+  - config_shows.yaml
 
 modes:
   - attract
