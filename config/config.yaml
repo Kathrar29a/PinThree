@@ -17,7 +17,7 @@ config:
   - config_neoseg_displays.yaml
   - config_keyboard.yaml
   - config_events.yaml
-  - config_lights.yaml
+#  - config_lights.yaml
   - config_lights_test.yaml
   - config_targets.yaml
   - config_shots.yaml

@@ -2,28 +2,11 @@
 
 # Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
 
-#switches:  Old Demo Setup
-#  # Cabinet Switches
-#  s_flipper_left:
-#    number:
-#    tags: left_flipper
-#  s_flipper_right:
-#    number:
-#    tags: right_flipper
-#  # Trough Switches
-#  s_trough_1:
-#    number:
-#  s_trough_2:
-#    number:
-#  s_trough_3:
-#    number:
-  #
-#  s_plunger_lane:
-#    number:
+
 
 #CC from V1.2
 switches:
-  s_door_open: # o
+  s_door_open: # o                  3-#-# numbered switches are hooked to satelite board
     number: "3-0-16"
     tags: service_door_open, power_off
   s_srv_select: #Right
@@ -37,11 +20,37 @@ switches:
     tags: service_up
   s_srv_down: #Down
     number: "3-0-20"
-    tags: service_down
-  #Direct Switches
+    tags: servise_down
+  s_action_left:
+    number: "3-0-21"
+    tags: action_left
+  s_action_right:
+    number: "3-0-27"
+    tags: action_right
+  s_start: # s
+    number: "3-0-24"
+    tags: start
+    ignore_window_ms: 500ms
+  s_launch_button: # p
+    number: "3-0-26"
+    tags: launch
+  s_plumb_tilt: # u
+    number: "3-0-23"
+    tags: tilt
+    ignore_window_ms: 500ms
+  s_roll_tilt: # y
+    number: "3-0-22"
+    tags: tilt
+    ignore_window_ms: 500ms
+  s_slam_tilt: # t
+    number: "3-0-25"
+    tags: slamtilt
+    ignore_window_ms: 500ms
+
+  # Direct Switches
   #
   #
-  #switch numbers are labelled in silkscreen on the board
+  # switch numbers are labelled in silkscreen on the board
   # Valid numbers outside to inside are:
   # 0-0-1  0-0-2  0-0-3  0-0-8  0-0-9  0-0-10  0-0-11
   # 0-0-27  0-0-26  0-0-25  0-0-24  0-0-19  0-0-18  0-0-17  0-0-16
@@ -51,29 +60,6 @@ switches:
   #  Optos must be direct switches
   #
   # Coils must be on the same processor as their associated direct switch
-  #
-  # s_left_flipper_lower		0-0-1
-  # s_left_flipper_upper		0-0-2
-  # s_left_flipper_lower_EOS		0-0-3
-  # s_left_flipper_upper_EOS		0-0-8
-  # s_left_pop_bumper		0-0-9
-  # s_kickback		0-0-10
-  # s_right_Scoop_opto		0-0-11
-  # s_skill_red_opto		0-0-27
-  # s_skill_yellow_opto		0-0-26
-  # s_right_pop_bumper		0-0-25
-  # s_right_slingshot		0-0-24
-  # s_right_flipper_lower		0-0-19
-  # s_right_flipper_lower_EOS		0-0-18
-  # s_right_flipper_upper		0-0-17
-  # s_right_flipper_upper_EOS		0-0-16
-  # s_lower_pop_bumper		1-0-1
-  # s_left_slingshot		1-0-2
-  # s_trough8_opto		1-0-3
-  # s_trough_jam_opto		1-0-8
-  # s_3b_drop_right_opto		1-0-9
-  # s_3b_drop_middle_opto		1-0-10
-  # s_3b_drop_left_opto		1-0-11
   #
   #
   s_left_flipper_lower: # ,
@@ -88,19 +74,24 @@ switches:
     number: "0-0-8"
   s_left_pop_bumper:
     number: "0-0-9"
+    tags: playfield_active, pops
   s_kickback:
     number: "0-0-10"
+    tags: playfield_active
   s_right_scoop_opto:
     number: "0-0-11"
     type: NC
   s_skillshot_red_opto:
     number: "0-0-27"
     type: NC
+    tags: playfield_active, nonskill
   s_skillshot_yellow_opto:
     number: "0-0-26"
     type: NC
+    tags: playfield_active, skillshotyellow
   s_right_pop_bumper:
     number: "0-0-25"
+    tags: playfield_active, pops
   s_right_slingshot:
     number: "0-0-24"
   s_right_flipper_lower: # .
@@ -115,8 +106,10 @@ switches:
     number: "0-0-16"
   s_lower_pop_bumper:
     number: "1-0-1"
+    tags: playfield_active, pops
   s_left_slingshot:
     number: "1-0-2"
+    tags: playfield_active, slings
   s_trough8_opto: # 8
     number: "1-0-3"
     type: NC
@@ -132,23 +125,12 @@ switches:
   s_3b_drop_left_opto:
     number: "1-0-11"
     type: NC
-  s_start: # s
-    number: "3-0-24"
-  s_launch_button: # p
-    number: "3-0-26"
-  s_plumb_tilt: # u
-    number: "3-0-23"
-  s_roll_tilt: # y
-    number: "3-0-22"
-  s_slam_tilt: # t
-    number: "3-0-25"
-  #
   #
   # Switch Matrix
   #
   # VERSION 1.3
   #
-#  s_m1_special_left:
+#  s_m1_special_left:   POSSIBLE UNISED
 #    number: 1-0-32
 #  s_m2_upper_ramp_upper_gate:
 #    number: 1-0-33
@@ -156,58 +138,88 @@ switches:
 #    number: 1-0-34
 #  s_m4_left_ramp_diverter_closed:
 #    number: 1-0-35
+# s_m9_roll_tilt:   OLD, unused switch
+#   number: "1-0-40"
+#  s_m17_plumb_tilt:   Old, unused switch
+#    number: "1-0-48"
+# s_m25_start:   OLD, Unused switch
+#   number: "1-0-56"
+#  s_m41_slam_tilt:  OLD, unused switch
+#    number: "1-0-72"
+# s_m49_launch_button:  OLD, Unused switch
+#   number: "1-0-80"
+#  s_m57_special_right:  OLD, unused switch
+#    number: "1-0-88"
   s_m5_left_ramp_lock1:
     number: "1-0-36"
   s_m6_left_saucer:
     number: "1-0-37"
+    ignore_window_ms: 250ms
   s_m7_left_outlane:
     number: "1-0-38"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m8_trough1: # 1
     number: "1-0-39"
-  s_m9_roll_tilt:
-    number: "1-0-40"
   s_m10_upper_ramp_kicker:
     number: "1-0-41"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m11_upper_3b_left:
     number: "1-0-42"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m12_upper_ramp_in_gate:
     number: "1-0-43"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m13_left_ramp_lock2:
     number: "1-0-44"
   s_m14_center_spinner:
     number: "1-0-45"
+    tags: playfield_active
   s_m15_left_inlane:
     number: "1-0-46"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m16_trough2: # 2
     number: "1-0-47"
-#  s_m17_plumb_tilt:   Old, unused switch
-#    number: "1-0-48"
   s_m18_upper_diverter_closed:
     number: "1-0-49"
+    ignore_window_ms: 250ms
   s_m19_upper_3b_middle:
     number: "1-0-50"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m20_upper_sling_score:
     number: "1-0-51"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m21_left_ramp_lock_3:
     number: "1-0-52"
   s_m22_center_target:
     number: "1-0-53"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m23_left_sling_score:
     number: "1-0-54"
+    tags: playfield_active, slings
   s_m24_trough3: # 3
     number: "1-0-55"
- # s_m25_start:   OLD, Unused switch
- #   number: "1-0-56"
   s_m26_upper_lock_3:
     number: "1-0-57"
   s_m27_upper_3b_right:
     number: "1-0-58"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m28_left_pop_score:
     number: "1-0-59"
+    tags: playfield_active, pops
   s_m29_secret_lock_1:
     number: "1-0-60"
   s_m30_right_saucer:
     number: "1-0-61"
+    ignore_window_ms: 250ms
   s_m31_left_lane_change:
     number: "1-0-62"
   s_m32_trough4: # 4
@@ -218,61 +230,88 @@ switches:
     number: "1-0-65"
   s_m35_bonus_lane_left:
     number: "1-0-66"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m36_right_pop_score:
     number: "1-0-67"
   s_m37_secret_lock_2:
     number: "1-0-68"
   s_m38_skillshot_yellow_gate:
     number: "1-0-69"
+    tags: skill_try
   s_m39_right_lane_change:
     number: "1-0-70"
   s_m40_trough5: # 5
     number: "1-0-71"
-#  s_m41_slam_tilt:  OLD, unused switch
-#    number: "1-0-72"
   s_m42_upper_lock_1:
     number: "1-0-73"
   s_m43_bonus_lane_middle:
     number: "1-0-74"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m44_lower_pop_score:
     number: "1-0-75"
+    tags: playfield_active, pops
   s_m45_lower_3b_left:
     number: "1-0-76"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m46_skillshot_green_gate:
     number: "1-0-77"
+    tags: skill_try
   s_m47_right_sling_score:
     number: "1-0-78"
+    tags: playfield_active, slings
   s_m48_trough6: # 6
     number: "1-0-79"
- # s_m49_launch_button:  OLD, Unused switch
- #   number: "1-0-80"
   s_m50_upper_band_score:
     number: "1-0-81"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m51_bonus_lane_right:
     number: "1-0-82"
+    tags: playfield_active
   s_m52_upper_center_target:
     number: "1-0-83"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m53_lower_3b_middle:
     number: "1-0-84"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m54_right_lane_change:
     number: "1-0-85"
   s_m55_right_outlane:
     number: "1-0-86"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m56_trough7: # 7
     number: "1-0-87"
-  s_m57_special_right:
-    number: "1-0-88"
   s_m58_right_loop_gate:
     number: "1-0-89"
+    tags: playfield_active, nonskill
+    ignore_window_ms: 250ms
   s_m59_xtraball_saucer:
     number: "1-0-90"
+    tags: xsaucer
+    ignore_window_ms: 250ms
   s_m60_right_spinner:
     number: "1-0-91"
+    tags: playfield_active, nonskill
   s_m61_lower_3b_right:
     number: "1-0-92"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m62_skillshot_green_award:
     number: "1-0-93"
+    tags: playfield_active, skillshotgreen
+    ignore_window_ms: 500ms
   s_m63_right_outlane:
     number: "1-0-94"
+    tags: playfield_active
+    ignore_window_ms: 250ms
   s_m64_plunger_lane: # 0
     number: "1-0-95"
+    tags: ball_at_plunger
+    ignore_window_ms: 250ms
+    

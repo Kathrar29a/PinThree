@@ -6,3 +6,60 @@
 # GI are RGB
 
 #
+lights:
+  l_ballinplay1:   # follows NeoSeg
+    number: "1-0-540"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_ballinplay2:
+    number: "1-0-543"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_2digit1:
+    number: "1-0-546"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_2digit2:
+    number: "1-0-549"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_player1:
+    number: "1-0-552"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_player2:
+    number: "1-0-555"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_player3:
+    number: "1-0-558"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+  l_player4:
+    number: "1-0-561"
+    type: rgb  # using GI LED
+    subtype: led
+    tags: BBinserts
+# possible other Back box lights here
+  l_upper_lock1:
+    number: "0-0-0"
+    type: grb
+    subtype: led
+    tags: upperlocks, inserts
+  l_upper_lock2:
+    number: "0-0-0"
+    type: grb
+    subtype: led
+    tags: upperlocks, inserts
+  l_upper_lock1:
+    number: "0-0-0"
+    type: grb
+    subtype: led
+    tags: upperlocks, inserts

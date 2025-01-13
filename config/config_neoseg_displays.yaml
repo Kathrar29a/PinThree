@@ -121,7 +121,7 @@ segment_displays:
          - neoSeg_3
       type: 14segment
 
-  neoSegPlayer:
+  neoSegBall:
     number: 1
     size: 4
     integrated_dots: true
@@ -132,7 +132,7 @@ segment_displays:
         - neoSeg_4
       type: 14segment
 
-  neoSegBall:
+  neoSeg2nd2d:
     number: 1
     size: 4
     integrated_dots: true
