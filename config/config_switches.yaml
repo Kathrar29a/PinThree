@@ -74,10 +74,10 @@ switches:
     number: "0-0-8"
   s_left_pop_bumper:
     number: "0-0-9"
-    tags: playfield_active, pops
+    tags: pops  #playfieldactive (auto)
   s_kickback:
     number: "0-0-10"
-    tags: playfield_active
+    tags: kickback  #playfieldactive (auto)
   s_right_scoop_opto:
     number: "0-0-11"
     type: NC
@@ -91,9 +91,10 @@ switches:
     tags: playfield_active, skillshotyellow
   s_right_pop_bumper:
     number: "0-0-25"
-    tags: playfield_active, pops
+    tags: pops  #playfieldactive (auto)
   s_right_slingshot:
     number: "0-0-24"
+    tags: slings   #playfield active (auto)
   s_right_flipper_lower: # .
     number: "0-0-19"
     tags: right_flipper
@@ -106,10 +107,10 @@ switches:
     number: "0-0-16"
   s_lower_pop_bumper:
     number: "1-0-1"
-    tags: playfield_active, pops
+    tags: pops  #playfieldactive (auto)
   s_left_slingshot:
     number: "1-0-2"
-    tags: playfield_active, slings
+    tags: slings  #playfield active (auto)
   s_trough8_opto: # 8
     number: "1-0-3"
     type: NC
@@ -314,4 +315,3 @@ switches:
     number: "1-0-95"
     tags: ball_at_plunger
     ignore_window_ms: 250ms
-    

@@ -24,7 +24,6 @@ lights:
          subtype: led
          tags: group1, gi
 
-
     l_ballinplay2:
          number: "1-0-1"
          type: grb
