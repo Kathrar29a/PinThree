@@ -3,148 +3,158 @@
 # Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
 
 # CC from V1.2
-#create light group for each NeoSeg display
+
+#use color_correction_profile whitepoint to adjust the brightness of each
+#neoSeg display
+light_settings:
+  color_correction_profiles:
+    neoSeg_blue:
+      whitepoint: [.5, .5, .5]
+
+#create light group for each neoSeg display
 neoseg_displays:
-  neoseg_0:
+  neoSeg_0:
     start_channel: "3-0-0"
     size: 8digit
     light_template:
       type: w
       subtype: led
-      color_correction_profile: NeoSeg_blue
+      color_correction_profile: neoSeg_blue
 
-  neoseg_1:
+  neoSeg_1:
     start_channel: "3-0-120"
     size: 8digit
     light_template:
       type: w
       subtype: led
-      color_correction_profile: NeoSeg_blue
+      color_correction_profile: neoSeg_blue
 
-  neoseg_2:
+  neoSeg_2:
     start_channel: "3-0-240"
     size: 8digit
     light_template:
       type: w
       subtype: led
-      color_correction_profile: NeoSeg_blue
+      color_correction_profile: neoSeg_blue
 
-  neoseg_3:
+  neoSeg_3:
     start_channel: "3-0-360"
     size: 8digit
     light_template:
       type: w
       subtype: led
-      color_correction_profile: NeoSeg_blue
+      color_correction_profile: neoSeg_blue
 
-  neoseg_4:
+  neoSeg_4:
     start_channel: "3-0-480"
     size: 2digit
     light_template:
       type: w
       subtype: led
-      color_correction_profile: NeoSeg_blue
+      color_correction_profile: neoSeg_blue
 
-  neoseg_5:
+  neoSeg_5:
     start_channel: "3-0-510"
     size: 2digit
     light_template:
       type: w
       subtype: led
-      color_correction_profile: NeoSeg_blue
+      color_correction_profile: neoSeg_blue
 
 #use light groups to arrange into a segment display
 
 segment_displays:
-  neoseg_top:
+  neoSegTop:
     number: 1
     size: 16
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-        - neoseg_0
-        - neoseg_1
+        - neoSeg_0
+        - neoSeg_1
       type: 14segment
 
-  neoseg_bot:
+  neoSegBot:
     number: 1
     size: 16
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-        - neoseg_2
-        - neoseg_3
+        - neoSeg_2
+        - neoSeg_3
       type: 14segment
 
-  neoseg_p1:
+  neoSegP1:
     number: 1
     size: 8
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-         - neoseg_0
+         - neoSeg_0
       type: 14segment
-  neoseg_p2:
+  neoSegP2:
     number: 1
     size: 8
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
          - neoSeg_1
       type: 14segment
-  neoseg_p3:
+  neoSegP3:
     number: 1
     size: 8
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-         - neoseg_2
+         - neoSeg_2
       type: 14segment
-  neoseg_p4:
+  neoSegP4:
     number: 1
     size: 8
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-         - neoseg_3
+         - neoSeg_3
       type: 14segment
 
-  neoseg_ball:
+  neoSeg_ball:
     number: 1
     size: 4
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-        - neoseg_4
+        - neoSeg_4
       type: 14segment
 
-  neoseg_2digitxtra:
+  neoSeg_2digitxtra:
     number: 1
     size: 4
     integrated_dots: true
     use_dots_for_commas: true
     default_transition_update_hz: 30
+    update_method: stack
     platform_settings:
       light_groups:
-        - neoseg_5
+        - neoSeg_5
       type: 14segment
-
-#use color_correction_profile whitepoint to adjust the brightness of each
-#NeoSeg display
-light_settings:
-    NeoSeg_blue:
-      whitepoint: [.5, .5, .5]
