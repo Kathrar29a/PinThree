@@ -63,13 +63,13 @@ lights:
     tags: BBinserts, group1
 # possible other Back box lights here
   l_gi_0:  # Backboard starting from left, Branch 0
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     number: 0-0-0
     tags: backboard, gi
   l_gi_1:  # Backboard 
     previous: l_gi_0
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: backboard, gi
   l_upper_lock_diverter: 
@@ -89,7 +89,7 @@ lights:
     tags: upperlocks, inserts, group1
   l_gi_5:  # Backboard 
     previous: l_upper_lock2
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: backboard, gi
   l_upper_lock1:
@@ -99,27 +99,27 @@ lights:
     tags: upperlocks, inserts, group1
   l_gi_7:  # Backboard 
     previous: l_upper_lock1
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: backboard, gi
   l_gi_8:  # Backboard 
     previous: l_gi_7
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: backboard, gi
   l_gi_9:  # Backboard 
     previous: l_gi_8
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: backboard, gi
   l_gi_10: 
     previous: l_gi_9
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_gi_11: 
     previous: l_gi_10
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_right_loop:
@@ -149,12 +149,12 @@ lights:
     tags: inserts, group1
   l_gi_17: 
     previous: l_bonus_lane_l
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_gi_18: 
     previous: l_gi_17
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_left_ramp_upper_gate:
@@ -164,22 +164,22 @@ lights:
     tags: inserts, group1
   l_gi_20:
     previous: l_left_ramp_upper_gate
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_gi_21: 
     previous: l_gi_20
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_gi_22: 
     previous: l_gi_21
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_gi_23:   # Last one of Branch B1
     previous: l_gi_22
-    color_correction_profile: corr_profile_gi
+    type:  rgb
     subtype: led
     tags: gi
   l_poptest:  # Test pops
