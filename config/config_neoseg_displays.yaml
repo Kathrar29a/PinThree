@@ -5,48 +5,48 @@
 # CC from V1.2
 #create light group for each NeoSeg display
 neoseg_displays:
-  neoSeg_0:
-    start_channel: "0-0-0"
+  neoseg_0:
+    start_channel: "3-0-0"
     size: 8digit
     light_template:
       type: w
       subtype: led
       color_correction_profile: NeoSeg_blue
 
-  neoSeg_1:
-    start_channel: "0-0-120"
+  neoseg_1:
+    start_channel: "3-0-120"
     size: 8digit
     light_template:
       type: w
       subtype: led
       color_correction_profile: NeoSeg_blue
 
-  neoSeg_2:
-    start_channel: "0-0-240"
+  neoseg_2:
+    start_channel: "3-0-240"
     size: 8digit
     light_template:
       type: w
       subtype: led
       color_correction_profile: NeoSeg_blue
 
-  neoSeg_3:
-    start_channel: "0-0-360"
+  neoseg_3:
+    start_channel: "3-0-360"
     size: 8digit
     light_template:
       type: w
       subtype: led
       color_correction_profile: NeoSeg_blue
 
-  neoSeg_4:
-    start_channel: "0-0-480"
+  neoseg_4:
+    start_channel: "3-0-480"
     size: 2digit
     light_template:
       type: w
       subtype: led
       color_correction_profile: NeoSeg_blue
 
-  neoSeg_5:
-    start_channel: "0-0-510"
+  neoseg_5:
+    start_channel: "3-0-510"
     size: 2digit
     light_template:
       type: w
@@ -56,7 +56,7 @@ neoseg_displays:
 #use light groups to arrange into a segment display
 
 segment_displays:
-  neoSegTop:
+  neoseg_top:
     number: 1
     size: 16
     integrated_dots: true
@@ -64,11 +64,11 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-        - neoSeg_0
-        - neoSeg_1
+        - neoseg_0
+        - neoseg_1
       type: 14segment
 
-  neoSegBot:
+  neoseg_bot:
     number: 1
     size: 16
     integrated_dots: true
@@ -76,11 +76,11 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-        - neoSeg_2
-        - neoSeg_3
+        - neoseg_2
+        - neoseg_3
       type: 14segment
 
-  neoSegP1:
+  neoseg_p1:
     number: 1
     size: 8
     integrated_dots: true
@@ -88,9 +88,9 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-         - neoSeg_0
+         - neoseg_0
       type: 14segment
-  neoSegP2:
+  neoseg_p2:
     number: 1
     size: 8
     integrated_dots: true
@@ -100,7 +100,7 @@ segment_displays:
       light_groups:
          - neoSeg_1
       type: 14segment
-  neoSegP3:
+  neoseg_p3:
     number: 1
     size: 8
     integrated_dots: true
@@ -108,9 +108,9 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-         - neoSeg_2
+         - neoseg_2
       type: 14segment
-  neoSegP4:
+  neoseg_p4:
     number: 1
     size: 8
     integrated_dots: true
@@ -118,10 +118,10 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-         - neoSeg_3
+         - neoseg_3
       type: 14segment
 
-  neoSegBall:
+  neoseg_ball:
     number: 1
     size: 4
     integrated_dots: true
@@ -129,10 +129,10 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-        - neoSeg_4
+        - neoseg_4
       type: 14segment
 
-  neoSeg2nd2d:
+  neoseg_2digitxtra:
     number: 1
     size: 4
     integrated_dots: true
@@ -140,15 +140,11 @@ segment_displays:
     default_transition_update_hz: 30
     platform_settings:
       light_groups:
-        - neoSeg_5
+        - neoseg_5
       type: 14segment
 
 #use color_correction_profile whitepoint to adjust the brightness of each
 #NeoSeg display
 light_settings:
-  color_correction_profiles:
-    corr_profile_gi:
-      whitepoint: [ 1, 1, 1 ]
-      gamma: 2.5
     NeoSeg_blue:
       whitepoint: [.5, .5, .5]

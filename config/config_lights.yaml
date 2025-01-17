@@ -6,60 +6,181 @@
 # GI are RGB
 
 #
+
+#use color_correction_profile whitepoint to adjust the brightness of each
+#NeoSeg display
+light_settings:
+  color_correction_profiles:
+    corr_profile_gi:
+      whitepoint: [ 1, 1, 1 ]
+      gamma: 2.5
+
+
+
 lights:
   l_ballinplay1:   # follows NeoSeg
-    number: "1-0-540"
+    previous: 3-0-540
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_ballinplay2:
-    number: "1-0-543"
+    previous: l_ballinplay1
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_2digit1:
-    number: "1-0-546"
+    previous: l_ballinplay2
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_2digit2:
-    number: "1-0-549"
+    previous: l_2digit1
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_player1:
-    number: "1-0-552"
+    previous: l_2digit2
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_player2:
-    number: "1-0-555"
+    previous: l_player1
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_player3:
-    number: "1-0-558"
+    previous: l_player2
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
   l_player4:
-    number: "1-0-561"
+    previous: l_player3
     type: rgb  # using GI LED
     subtype: led
     tags: BBinserts
 # possible other Back box lights here
-  l_upper_lock1:
-    number: "0-0-0"
-    type: grb
+  l_gi_0:  # Backboard starting from left, Branch 0
+    type: rgb
+    subtype: led
+    number: 0-0-0
+    tags: gi, backboard
+  l_gi_1:  # Backboard 
+    previous: l_gi_0
+    type: rgb
+    subtype: led
+    tags: gi, backboard
+  l_upper_lock_diverter: 
+    previous: l_gi_1
+    type: rgb
+    subtype: led
+    tags: diverter
+  l_upper_lock3:
+    previous: l_upper_lock_diverter
+    type: rgb
     subtype: led
     tags: upperlocks, inserts
   l_upper_lock2:
-    number: "0-0-0"
-    type: grb
+    previous: l_upper_lock3
+    type: rgb
     subtype: led
     tags: upperlocks, inserts
+  l_gi_5:  # Backboard 
+    previous: l_upper_lock2
+    type: rgb
+    subtype: led
+    tags: gi, backboard
   l_upper_lock1:
-    number: "0-0-0"
-    type: grb
+    previous: l_gi_5
+    type: rgb
     subtype: led
     tags: upperlocks, inserts
+  l_gi_7:  # Backboard 
+    previous: l_upper_lock1
+    type: rgb
+    subtype: led
+    tags: gi, backboard
+  l_gi_8:  # Backboard 
+    previous: l_gi_7
+    type: rgb
+    subtype: led
+    tags: gi, backboard
+  l_gi_9:  # Backboard 
+    previous: l_gi_8
+    type: rgb
+    subtype: led
+    tags: gi, backboard
+  l_gi_10: 
+    previous: l_gi_9
+    type: rgb
+    subtype: led
+    tags: gi
+  l_gi_11: 
+    previous: l_gi_10
+    type: rgb
+    subtype: led
+    tags: gi
+  l_right_loop:
+    previous: l_gi_11
+    type: grb
+    subtype: led
+    tags: inserts
+  l_bonus_lane_r:
+    previous: l_right_loop
+    type: grb
+    subtype: led
+    tags: inserts
+  l_bonus_lane_m:
+    previous: l_bonus_lane_r
+    type: grb
+    subtype: led
+    tags: inserts
+  l_starpost_p2:  # Twig 1
+    previous: l_bonus_lane_m
+    type: grb
+    subtype: led
+    tags: starpost
+  l_bonus_lane_l:
+    previous: l_starpost_p2
+    type: grb
+    subtype: led
+    tags: inserts
+  l_gi_17: 
+    previous: l_bonus_lane_l
+    type: rgb
+    subtype: led
+    tags: gi
+  l_gi_18: 
+    previous: l_gi_17
+    type: rgb
+    subtype: led
+    tags: gi
+  l_left_ramp_upper_gate:
+    previous: l_gi_18
+    type: grb
+    subtype: led
+    tags: inserts
+  l_gi_20:
+    previous: l_left_ramp_upper_gate
+    type: rgb
+    subtype: led
+    tags: gi
+  l_gi_21: 
+    previous: l_gi_20
+    type: rgb
+    subtype: led
+    tags: gi
+  l_gi_22: 
+    previous: l_gi_21
+    type: rgb
+    subtype: led
+    tags: gi
+  l_gi_23:   # Last one of Branch B1
+    previous: l_gi_22
+    type: rgb
+    subtype: led
+    tags: gi
+  l_poptest:  # Test pops
+    previous: l_gi_23
+    type: rgbw
+    subtype: led
+    tags: pops
