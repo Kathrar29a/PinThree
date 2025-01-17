@@ -67,12 +67,12 @@ lights:
     subtype: led
     number: 0-0-0
     tags: backboard, gi
-  l_gi_1:  # Backboard 
+  l_gi_1:  # Backboard
     previous: l_gi_0
     type:  rgb
     subtype: led
     tags: backboard, gi
-  l_upper_lock_diverter: 
+  l_upper_lock_diverter:
     previous: l_gi_1
     type: rgb
     subtype: led
@@ -87,7 +87,7 @@ lights:
     type: rgb
     subtype: led
     tags: upperlocks, inserts, group1
-  l_gi_5:  # Backboard 
+  l_gi_5:  # Backboard
     previous: l_upper_lock2
     type:  rgb
     subtype: led
@@ -97,27 +97,27 @@ lights:
     type: rgb
     subtype: led
     tags: upperlocks, inserts, group1
-  l_gi_7:  # Backboard 
+  l_gi_7:  # Backboard
     previous: l_upper_lock1
     type:  rgb
     subtype: led
     tags: backboard, gi
-  l_gi_8:  # Backboard 
+  l_gi_8:  # Backboard
     previous: l_gi_7
     type:  rgb
     subtype: led
     tags: backboard, gi
-  l_gi_9:  # Backboard 
+  l_gi_9:  # Backboard
     previous: l_gi_8
     type:  rgb
     subtype: led
     tags: backboard, gi
-  l_gi_10: 
+  l_gi_10:
     previous: l_gi_9
     type:  rgb
     subtype: led
     tags: gi
-  l_gi_11: 
+  l_gi_11:
     previous: l_gi_10
     type:  rgb
     subtype: led
@@ -147,12 +147,12 @@ lights:
     type: grb
     subtype: led
     tags: inserts, group1
-  l_gi_17: 
+  l_gi_17:
     previous: l_bonus_lane_l
     type:  rgb
     subtype: led
     tags: gi
-  l_gi_18: 
+  l_gi_18:
     previous: l_gi_17
     type:  rgb
     subtype: led
@@ -167,12 +167,12 @@ lights:
     type:  rgb
     subtype: led
     tags: gi
-  l_gi_21: 
+  l_gi_21:
     previous: l_gi_20
     type:  rgb
     subtype: led
     tags: gi
-  l_gi_22: 
+  l_gi_22:
     previous: l_gi_21
     type:  rgb
     subtype: led
