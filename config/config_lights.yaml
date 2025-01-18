@@ -76,7 +76,7 @@ lights:
     previous: l_gi_1
     type: rgb
     subtype: led
-    tags: diverter, gropup1
+    tags: diverter, group1
   l_upper_lock3:
     previous: l_upper_lock_diverter
     type: rgb
@@ -126,7 +126,7 @@ lights:
     previous: l_gi_11
     type: grb
     subtype: led
-    tags: inserts
+    tags: inserts, group1
   l_bonus_lane_r:
     previous: l_right_loop
     type: grb

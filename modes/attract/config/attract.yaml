@@ -58,6 +58,9 @@ timers:
             - event: s_right_flipper_lower_active
               action: restart
 
+show_player:
+  mode_attract_started: pulse_show
+
 
 #event_player:
 #  timer_attract_carousel_timer_complete: random_lights
