@@ -79,7 +79,9 @@ timers:
 
 
 # from Tag Team      mystery.yaml
-#event_player:
+event_player:
+  left_flipper_active: alllightson
+  right_flipper_active: random_lights
 #   sw_pops{(current_player.popHitsTotal+1)%65==0}: enable_mystery
 #   s_topRollunder_active{current_player.mystery_enabled==1}: select_mystery
 
@@ -94,22 +96,3 @@ timers:
 #         mysteryAward_UnlimitedChances_event: 10
 #         mysteryAward_AdvJackpot_event: 15
 #         mysteryAward_ScoringX_event: 20
-
-#random_event_player:
-#  random_lights:
-#    events:
-#      alllightson: 50
-#      alllightsoff: 50
-
-#show_player:
-#  alllightson:
-#    light_player:
-#     group_light:
-#        group1: green
-#        gi: white
-
-#  alllightsoff:
-#    light_player:
-#      group_light:
-#       group1: red
-#        gi: blue

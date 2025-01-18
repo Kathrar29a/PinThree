@@ -73,10 +73,17 @@ timed_switches:
         time: 5s
         events_when_active: end_game
 
-#virtual_platform_start_active_switches:
+virtual_platform_start_active_switches:
 #  - s_trough1
 #  - s_trough2
-#  - s_trough3
+  - s_m8_trough1
+  - s_m16_trough2
+  - s_m24_trough3
+  - s_m32_trough4
+  - s_m40_trough5
+  - s_m48_trough6
+  - s_m56_trough7
+  - s_trough8_opto
 
 # CC from V1.2
 flippers:
@@ -141,7 +148,7 @@ named_colors:
 light_player:
   shutdown:
 #    inserts:
- #     color: 000002
+#     color: 000002
   #    priority: 1000000
         gi:
             color: off
@@ -149,6 +156,21 @@ light_player:
         group1:
             color: off
             priority: 1000000
+  alllightson:
+        group1:
+            color: green
+            priority: 1000000
+        gi:
+            color: white
+            priority: 1000000
+  alllightson2:
+        group1:
+            color: red
+            priority: 1000000
+        gi:
+            color: blue
+            priority: 1000000
+
 #    l_pops:
  #     color: off
   #    priority: 1000000
@@ -177,3 +199,10 @@ segment_display_player:
 #        neoSeg_2digitxtra:
 #            ext: ""
 #            priority: 1000000
+
+random_event_player:
+  random_lights:
+    scope: machine
+    events:
+      - alllightson
+      - alllightson2

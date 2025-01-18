@@ -98,24 +98,25 @@ coils:
   c_HV_enable:  # High Voltage Coils Enable RELAY
     number: "1-0-2"
     allow_enable: true
-  c_spec_coils_enable:  # Special Coils Enable RELAY
+  c_spec_coils_enable:  # Special Coils Enable RELAY (flippers)
     number: "1-0-1"
     allow_enable: true
-   # number: 2-0-15 possible DT auto Drop
-  # number: 2-0-14 possible DT auto Drop
-  # number: 2-0-13 possible DT auto Drop
-  # number: 2-0-12 possible right out lane gate
+   # number: 3-0-0 possible DT auto Drop
+  # number: 3-0-7 possible DT auto Drop
+  # key pin
+  # number: 3-0-6 possible DT auto Drop
+  # number: 3-0-5 possible right out lane gate
   c_plunger:  # auto shooter coil
-    number: "2-0-11"
+    number: "3-0-4"
     default_pulse_ms: 20
   c_skill_kicker:
-    number: "2-0-10"
+    number: "3-0-3"
     default_pulse_ms: 20
   c_right_scoop:
-    number: "2-0-9"
+    number: "3-0-2"
     default_pulse_ms: 20
   c_right_saucer:
-    number: "2-0-8"
+    number: "3-0-1"
     default_pulse_ms: 20
 
 
@@ -158,6 +159,10 @@ coil_player:
     machine_reset_phase_3:
         c_HV_enable:
             action: enable
+        c_spec_coils_enable:
+            action: enable
     shutdown:
         c_HV_enable:
+            action: disable
+        c_spec_coils_enable:
             action: disable
