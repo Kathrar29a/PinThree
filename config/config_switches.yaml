@@ -80,7 +80,7 @@ switches:
     tags: kickback  #playfieldactive (auto)
   s_right_scoop_opto:
     number: "0-0-11"
-    type: NC
+    #type: NC
   s_skillshot_red_opto:
     number: "0-0-27"
     type: NC

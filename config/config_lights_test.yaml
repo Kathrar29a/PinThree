@@ -5,7 +5,7 @@
 # INSERTS are GRB
 # GI are RGB
 
-lights:
+#lights:
 #    l_shooterRod:
 #       previous: l_gi_1 #number: 1-0-26
 #        type: grb
@@ -17,30 +17,30 @@ lights:
  #       color_correction_profile: corr_profile_gi
  #       subtype: led
  #       tags: gi
+#
+ #   l_ballinplay1:
+ #        number: "1-0-0"
+ #        type: grb
+ #        subtype: led
+ #        tags: group1, gi
+#
+#    l_ballinplay2:
+#         number: "1-0-1"
+#         type: grb
+#         subtype: led
+#         tags: group1
 
-    l_ballinplay1:
-         number: "1-0-0"
-         type: grb
-         subtype: led
-         tags: group1, gi
-
-    l_ballinplay2:
-         number: "1-0-1"
-         type: grb
-         subtype: led
-         tags: group1
-
-light_player:
-   led_code:
-      l_ballinplay1: "DFFF00"
-   led_off:
-      l_ballinplay1: off
-      l_ballinplay2: off
-   led_name:
-      l_ballinplay2: LightSalmon
-   group_light:
-      group1: green
-   led_fade:
-      l_ballinplay1:
-        color: slateblue
-        fade: 2000ms
+##light_player:
+#   led_code:
+#      l_ballinplay1: "DFFF00"
+#   led_off:
+#      l_ballinplay1: off
+#      l_ballinplay2: off
+#   led_name:
+#      l_ballinplay2: LightSalmon
+#   group_light:
+#      group1: green
+#   led_fade:
+#      l_ballinplay1:
+#        color: slateblue
+#        fade: 2000ms

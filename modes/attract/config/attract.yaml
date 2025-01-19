@@ -58,5 +58,35 @@ timers:
             - event: s_right_flipper_lower_active
               action: restart
 
+# FROM TAG TEAM FOR EXAMPLE
+#show_player:
+#    mode_attract_started:
+#        attract_display_loop:
+#            speed: 1
+#        attract_segment_loop:
+#            speed: 1
+#        attract_light_show:
+#            speed: 15
+#        attract_light_show_drop:
+#            speed: 0.75
+#        color_on:
+#            show_tokens:
+#                color: tt_yellow
+#                led: l_leftCoin, l_rightCoin
+#        sequenceColor:
+#            speed: 6
+#            priority: 3
+#            show_tokens:
+#                color: tt_white
+#                led: l_popLeft, l_topRollover3, l_special1, l_shootAgain, l_aux19, l_aux20, l_10000Rollunder, l_captureLeftTop, l_tripleScoring, l_collectRight, l_aux15, l_aux8, l_lastChanceLeft, l_shooterRod, l_startButton
+#                ledB: l_popRight, l_topRollover2, l_special2, l_2xMult, l_3xMult, l_4xMult, l_15000Rollunder, l_collectLeftTop, l_teamPlay1, l_teamPlay2, l_captureRight, l_aux14, l_collectLeftSide, l_aux4
+#                ledC: l_popLower, l_topRollover1, l_special3, l_5xMult, l_extraBall, l_aux6, l_regulationPlay1, l_regulationPlay2, l_spinner, l_launchLeftSide, l_aux2, l_specialSpot, l_lastChanceRight
+#
+
+
 show_player:
-  mode_attract_started: pulse_show
+    mode_attract_started:
+        pulse_light_show:
+            speed: 1
+        blink_light_show:
+            speed: 1

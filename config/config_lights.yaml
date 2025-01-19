@@ -5,19 +5,13 @@
 # INSERTS are GRB
 # GI are RGB
 
-#
-
-
-
-
 #use color_correction_profile whitepoint to adjust the brightness of each
 #NeoSeg display
-light_settings:
-  color_correction_profiles:
-    corr_profile_gi:
-      whitepoint: [ 1, 1, 1 ]
-      gamma: 2.5
-
+#light_settings:
+#  color_correction_profiles:
+#    corr_profile_gi:
+#      whitepoint: [ 1, 1, 1 ]
+#      gamma: 2.5
 
 
 lights:
@@ -63,9 +57,9 @@ lights:
     tags: BBinserts, group1
 # possible other Back box lights here
   l_gi_0:  # Backboard starting from left, Branch 0
+    number: 0-0-0
     type:  rgb
     subtype: led
-    number: 0-0-0
     tags: backboard, gi
   l_gi_1:  # Backboard
     previous: l_gi_0
@@ -187,3 +181,43 @@ lights:
     type: rgbw
     subtype: led
     tags: pops, group1
+  l_pop_ring1:
+    start_channel: 1-0-0
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring2:
+    previous: l_pop_ring1
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring3:
+    previous: l_pop_ring2
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring4:
+    previous: l_pop_ring3
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring5:
+    previous: l_pop_ring4
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring6:
+    previous: l_pop_ring5
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring7:
+    previous: l_pop_ring6
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_pop_ring8:
+    previous: l_pop_ring7
+    type: rgbw
+    subtype: led
+    tags: group1
