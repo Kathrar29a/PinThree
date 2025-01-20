@@ -56,7 +56,7 @@ lights:
     subtype: led
     tags: BBinserts, group1
 # possible other Back box lights here
-  l_gi_0:  # Backboard starting from left, Branch 0
+  l_gi_0:  # Backboard starting from left,                        Branch 1
     number: 0-0-0
     type:  rgb
     subtype: led
@@ -131,8 +131,43 @@ lights:
     type: grb
     subtype: led
     tags: inserts, group1
-  l_starpost_p2:  # Twig 1
+  l_starpost_p2_1:  # Twig 1
     previous: l_bonus_lane_m
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_2:  # Twig 1
+    previous: l_starpost_p2_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_3:  # Twig 1
+    previous: l_starpost_p2_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_4:  # Twig 1
+    previous: l_starpost_p2_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_5:  # Twig 1
+    previous: l_starpost_p2_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_6:  # Twig 1
+    previous: l_starpost_p2_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_7:  # Twig 1
+    previous: l_starpost_p2_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p2_8:  # Twig 1
+    previous: l_starpost_p2_7
     type: grb
     subtype: led
     tags: starpost, group1
@@ -176,48 +211,744 @@ lights:
     type:  rgb
     subtype: led
     tags: gi
-  l_poptest:  # Test pops
+  l_starpost_p1_1:  # Twig 2,                     Branch 2
     previous: l_gi_23
-    type: rgbw
+    type: grb
     subtype: led
-    tags: pops, group1
-  l_pop_ring1:
-    start_channel: 1-0-0
+    tags: starpost, group1
+  l_starpost_p1_2:  # Twig 2
+    previous: l_starpost_p1_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p1_3:  # Twig 2
+    previous: l_starpost_p1_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p1_4:  # Twig 2
+    previous: l_starpost_p1_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p1_5:  # Twig 2
+    previous: l_starpost_p1_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p1_6:  # Twig 2
+    previous: l_starpost_p1_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p1_7:  # Twig 2
+    previous: l_starpost_p1_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p1_8:  # Twig 2
+    previous: l_starpost_p1_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_gi_25:
+    previous: l_starpost_p1_8
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_gi_26:
+    previous: l_gi_25
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_gi_27:
+    previous: l_gi_26
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_gi_28:
+    previous: l_gi_27
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_starpost_p3_1:  # Twig 3
+    previous: l_gi_28
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_2:  # Twig 3
+    previous: l_starpost_p3_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_3:  # Twig 3
+    previous: l_starpost_p3_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_4:  # Twig 3
+    previous: l_starpost_p3_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_5:  # Twig 3
+    previous: l_starpost_p3_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_6:  # Twig 3
+    previous: l_starpost_p3_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_7:  # Twig 3
+    previous: l_starpost_p3_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p3_8:  # Twig 3
+    previous: l_starpost_p3_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_bonus_lane_l:
+    previous: l_starpost_p3_8
+    type: grb
+    subtype: led
+    tags: inserts, group1
+  l_starpost_p4_1:  # Twig 4
+    previous: l_bonus_lane_l
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_2:  # Twig 4
+    previous: l_starpost_p4_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_3:  # Twig 4
+    previous: l_starpost_p4_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_4:  # Twig 4
+    previous: l_starpost_p4_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_5:  # Twig 4
+    previous: l_starpost_p4_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_6:  # Twig 4
+    previous: l_starpost_p4_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_7:  # Twig 4
+    previous: l_starpost_p4_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p4_8:  # Twig 4
+    previous: l_starpost_p4_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_upper_3b_r:
+    previous: l_starpost_p4_8
+    type: grb
+    subtype: led
+    tags: inserts, group1
+  l_lpop_ring1: # Left POP ring, Twig 5,                    Branch 3
+    start_channel: 0-0-183
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring2:
-    previous: l_pop_ring1
+  l_lpop_ring2:
+    previous: l_lpop_ring1
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring3:
-    previous: l_pop_ring2
+  l_lpop_ring3:
+    previous: l_lpop_ring2
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring4:
-    previous: l_pop_ring3
+  l_lpop_ring4:
+    previous: l_lpop_ring3
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring5:
-    previous: l_pop_ring4
+  l_lpop_ring5:
+    previous: l_lpop_ring4
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring6:
-    previous: l_pop_ring5
+  l_lpop_ring6:
+    previous: l_lpop_ring5
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring7:
-    previous: l_pop_ring6
+  l_lpop_ring7:
+    previous: l_lpop_ring6
     type: rgbw
     subtype: led
     tags: group1
-  l_pop_ring8:
-    previous: l_pop_ring7
+  l_lpop_ring8:
+    previous: l_lpop_ring7
     type: rgbw
     subtype: led
     tags: group1
+  l_starpost_p19_1:  # Twig 6
+    previous: l_lpop_ring8
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_2:
+    previous: l_starpost_p19_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_3:
+    previous: l_starpost_p19_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_4:
+    previous: l_starpost_p19_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_5:
+    previous: l_starpost_p19_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_6:
+    previous: l_starpost_p19_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_7:
+    previous: l_starpost_p19_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p19_8:
+    previous: l_starpost_p19_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_gi_35:
+    previous: l_starpost_p19_8
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_gi_36:
+    previous: l_gi_35
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_gi_37:
+    previous: l_gi_36
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_starpost_p20_1:  # Twig 7
+    previous: l_gi_37
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_2:
+    previous: l_starpost_p20_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_3:
+    previous: l_starpost_p20_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_4:
+    previous: l_starpost_p20_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_5:
+    previous: l_starpost_p20_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_6:
+    previous: l_starpost_p20_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_7:
+    previous: l_starpost_p20_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p20_8:
+    previous: l_starpost_p20_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_upper_3b_l:
+    previous: l_starpost_p20_8
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_upper_3b_m:
+    previous: l_upper_3b_l
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_rpop_ring1: # Right POP ring, Twig 8,                Branch 4
+    start_channel: 0-0-278
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring2:
+    previous: l_rpop_ring1
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring3:
+    previous: l_rpop_ring2
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring4:
+    previous: l_rpop_ring3
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring5:
+    previous: l_rpop_ring4
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring6:
+    previous: l_rpop_ring5
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring7:
+    previous: l_rpop_ring6
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_rpop_ring8:
+    previous: l_rpop_ring7
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_xball_lane_upper:
+    previous: l_rpop_ring8
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_xball_lane_middle:
+    previous: l_xball_lane_upper
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_skill_kicker_arrow:
+    previous: l_xball_lane_middle
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_right_spinner:
+    previous: l_skill_kicker_arrow
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_xball_arrow:
+    previous: l_right_spinner
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_starpost_p5_1:  # Twig 9
+    previous: l_xball_arrow
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_2:  # Twig 3
+    previous: l_starpost_p5_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_3:  # Twig 3
+    previous: l_starpost_p5_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_4:  # Twig 3
+    previous: l_starpost_p5_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_5:  # Twig 3
+    previous: l_starpost_p5_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_6:  # Twig 3
+    previous: l_starpost_p5_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_7:  # Twig 3
+    previous: l_starpost_p5_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p5_8:  # Twig 3
+    previous: l_starpost_p5_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_lowpop_ring1: # Lower POP ring, Twig 10
+    start_channel: 0-0-349
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring2:
+    previous: l_lowpop_ring1
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring3:
+    previous: l_lowpop_ring2
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring4:
+    previous: l_lowpop_ring3
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring5:
+    previous: l_lowpop_ring4
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring6:
+    previous: l_lowpop_ring5
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring7:
+    previous: l_lowpop_ring6
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_lowpop_ring8:
+    previous: l_lowpop_ring7
+    type: rgbw
+    subtype: led
+    tags: group1
+  l_starpost_p18_1:  # Twig 11,                Branch 5
+    previous: l_lowpop_ring8
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_2:
+    previous: l_starpost_p18_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_3:
+    previous: l_starpost_p18_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_4:
+    previous: l_starpost_p18_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_5:
+    previous: l_starpost_p18_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_6:
+    previous: l_starpost_p18_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_7:
+    previous: l_starpost_p18_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p18_8:
+    previous: l_starpost_p18_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_lower_3b_r:
+    previous: l_starpost_p18_8
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_lower_3b_m:
+    previous: l_lower_3b_r
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_lower_3b_l:
+    previous: l_lower_3b_m
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_left_lock1:
+    previous: l_lower_3b_l
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_left_lock2:
+    previous: l_left_lock1
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_left_lock3:
+    previous: l_left_lock2
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_left_diverter:
+    previous: l_left_lock3
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_starpost_p17_1:  # Twig 12
+    previous: l_left_diverter
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_2:
+    previous: l_starpost_p17_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_3:
+    previous: l_starpost_p17_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_4:
+    previous: l_starpost_p17_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_5:
+    previous: l_starpost_p17_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_6:
+    previous: l_starpost_p17_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_7:
+    previous: l_starpost_p17_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p17_8:
+    previous: l_starpost_p17_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_secret_lock1:
+    previous: l_starpost_p17_8
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_gi_59:
+    previous: l_secret_lock1
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_upper_ramp_gate:
+    previous: l_gi_59
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_gi_61:
+    previous: l_upper_ramp_gate
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_gi_62:
+    previous: l_gi_61
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_secret_lock2:
+    previous: l_gi_62
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_gi_64: #                      Branch 6
+    previous: l_secret_lock2
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_starpost_p6_1:  # Twig 13
+    previous: l_gi_64
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_2:
+    previous: l_starpost_p6_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_3:
+    previous: l_starpost_p6_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_4:
+    previous: l_starpost_p6_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_5:
+    previous: l_starpost_p6_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_6:
+    previous: l_starpost_p6_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_7:
+    previous: l_starpost_p6_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p6_8:
+    previous: l_starpost_p6_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_center_target:
+    previous: l_starpost_p6_8
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_option_1:
+    previous: l_center_target
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_option_2:
+    previous: l_option_1
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_gi_69:
+    previous: l_option_2
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_right_kick_hole:
+    previous: l_gi_69
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_gi_71:
+    previous: l_right_kick_hole
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_skill_shot_yellow:
+    previous: l_gi_71
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_skill_shot_green:
+    previous: l_skill_shot_yellow
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_skill_shot_red:
+    previous: l_skill_shot_green
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_gi_75:
+    previous: l_skill_shot_red
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_gi_76:
+    previous: l_gi_75
+    type:  rgb
+    subtype: led
+    tags: gi
+  l_right_scoop:
+    previous: l_gi_76
+    type:  rgb
+    subtype: led
+    tags: inserts, group1
+  l_starpost_p7_1:  # Twig 14
+    previous: l_gi_64
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_2:
+    previous: l_starpost_p7_1
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_3:
+    previous: l_starpost_p7_2
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_4:
+    previous: l_starpost_p7_3
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_5:
+    previous: l_starpost_p7_4
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_6:
+    previous: l_starpost_p7_5
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_7:
+    previous: l_starpost_p7_6
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_starpost_p7_8:
+    previous: l_starpost_p7_7
+    type: grb
+    subtype: led
+    tags: starpost, group1
+  l_r_kick_hole_arrow:
+    previous: l_starpost_p7_8
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+  l_right_lock_lit:
+    previous: l_r_kick_hole_arrow
+    type:  grb
+    subtype: led
+    tags: inserts, group1
+##  BRANCH 7 here
