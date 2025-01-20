@@ -172,7 +172,7 @@ lights:
     subtype: led
     tags: starpost, group1
   l_bonus_lane_l:
-    previous: l_starpost_p2
+    previous: l_starpost_p2_8
     type: grb
     subtype: led
     tags: inserts, group1
@@ -311,13 +311,13 @@ lights:
     type: grb
     subtype: led
     tags: starpost, group1
-  l_bonus_lane_l:
+  l_kick_hole_xball:
     previous: l_starpost_p3_8
     type: grb
     subtype: led
     tags: inserts, group1
   l_starpost_p4_1:  # Twig 4
-    previous: l_bonus_lane_l
+    previous: l_kick_hole_xball
     type: grb
     subtype: led
     tags: starpost, group1
@@ -902,7 +902,7 @@ lights:
     subtype: led
     tags: inserts, group1
   l_starpost_p7_1:  # Twig 14
-    previous: l_gi_64
+    previous: l_right_scoop
     type: grb
     subtype: led
     tags: starpost, group1

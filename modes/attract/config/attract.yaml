@@ -83,10 +83,10 @@ timers:
 #                ledC: l_popLower, l_topRollover1, l_special3, l_5xMult, l_extraBall, l_aux6, l_regulationPlay1, l_regulationPlay2, l_spinner, l_launchLeftSide, l_aux2, l_specialSpot, l_lastChanceRight
 #
 
-
-show_player:
-    mode_attract_started:
-        pulse_light_show:
-            speed: 1
-        blink_light_show:
-            speed: 1
+#                          GOOD SHOW CODE, need to make new shows
+#show_player:
+#    mode_attract_started:
+ #       pulse_light_show:
+ #           speed: 1
+ #       blink_light_show:
+ #           speed: 1
