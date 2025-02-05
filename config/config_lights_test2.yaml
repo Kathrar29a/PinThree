@@ -18,8 +18,8 @@
 
 light_stripes:
  popRing:
-   start_channel: 0-0-561    #0-0-480
-   number_template: 0-0-{}
+   start_channel: 1-0-311    #0-0-480
+   number_template: 1-0-{}
    light_template:
      tags: l_pop
      type: grbw
@@ -27,8 +27,8 @@ light_stripes:
      color_correction_profile: corr_pop
    count: 8
  starRing:
-   start_channel: 0-0-593    #0-0-512
-   number_template: 0-0-{}
+   start_channel: 1-0-343    #0-0-512
+   number_template: 1-0-{}
    light_template:
      tags: l_star
      type: grb

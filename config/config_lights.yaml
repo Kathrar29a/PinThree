@@ -1052,7 +1052,7 @@ lights:
     subtype: led
     tags: inserts, group1
   l_starpost_p16_1:  # Twig 16
-    previous: l_scr_left4
+    previous: l_left_saucer
     type: grb
     subtype: led
     tags: starpost, group1
@@ -1091,32 +1091,32 @@ lights:
     type: grb
     subtype: led
     tags: starpost, group1
-  l_drop3b_l:
+  l_drop3b_l:  # 3 bank drop insert
     previous: l_starpost_p16_8
     type:  grb
     subtype: led
     tags: inserts, group1
-  l_drop3b_l_bk:
+  l_drop3b_l_bk:  # 3 bank drop back light
     previous: l_sdrop3b_l
     type:  grb
     subtype: led
     tags: inserts, group1
-  l_drop3b_m_bk:
+  l_drop3b_m_bk:  # 3 bank drop back light
     previous: l_drop3b_l_bk
     type:  grb
     subtype: led
     tags: inserts, group1
-  l_drop3b_r_bk:
+  l_drop3b_r_bk:  # 3 bank drop back light
     previous: l_drop3b_m_bk
     type:  grb
     subtype: led
     tags: inserts, group1
-  l_drop3b_r:
+  l_drop3b_r:  # 3 bank drop insert
     previous: l_drop3b_r_bk
     type:  grb
     subtype: led
     tags: inserts, group1
-  l_drop_3b_m:
+  l_drop_3b_m:  # 3 bank drop insert
     previous: l_drop3b_r
     type:  grb
     subtype: led
@@ -1271,7 +1271,7 @@ lights:
     type:  grb
     subtype: led
     tags: inserts, group1
-  l_bonus_label:  # Branch 9  Channel Bank 1
+  l_bonus_label:  # Branch 9                         Channel Bank 1
     number: 1-0-0
     type:  grb
     subtype: led
@@ -1282,7 +1282,7 @@ lights:
     subtype: led
     tags: gi
   l_starpost_p10_1:  # Twig 19
-    start channel: 1-0-6
+    previous: l_gi_112
     type: grb
     subtype: led
     tags: starpost, group1
@@ -1372,7 +1372,7 @@ lights:
     subtype: led
     tags: starpost, group1
   l_gi_117:
-    previous: l_bonus_label
+    previous: l_starpost_p11_8
     type:  rgb
     subtype: led
     tags: gi
@@ -1577,7 +1577,7 @@ lights:
     subtype: led
     tags: gi
   l_flasher4_ring1: # Mid Right Flasher, Branch 11, Twig 24
-    start_channel: 0-0-918
+    start_channel: 1-0-183
     type: grbw
     subtype: led
     tags: group1
@@ -1617,7 +1617,7 @@ lights:
     subtype: led
     tags: group1
     l_flasher3_ring1: # Mid Left Flasher, Branch 11, Twig 25
-    start_channel: 0-0-
+    start_channel: 1-0-215
     type: grbw
     subtype: led
     tags: group1
@@ -1657,7 +1657,7 @@ lights:
     subtype: led
     tags: group1
     l_flasher1_ring1: # Top Left Flasher, Branch 11, Twig 26
-    start_channel: 0-0-
+    start_channel: 1-0-247
     type: grbw
     subtype: led
     tags: group1
@@ -1697,7 +1697,7 @@ lights:
     subtype: led
     tags: group1
     l_flasher2_ring1: # Top Right Flasher, Branch 11, Twig 27
-    start_channel: 0-0-
+    start_channel: 1-0-279
     type: grbw
     subtype: led
     tags: group1
