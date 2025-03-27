@@ -16,12 +16,14 @@ show_behind_parent = true
 position = Vector2(400, 640)
 texture = ExtResource("2_y4wdb")
 
-[node name="MPFCarousel" type="Node2D" parent="."]
+[node name="MPFCarousel" type="Control" parent="."]
 show_behind_parent = true
+anchors_preset = 0
 script = ExtResource("3_1xbcu")
 carousel_name = "attract"
 
 [node name="game_over" type="RichTextLabel" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 1148.0
 offset_right = 675.0
@@ -53,6 +55,7 @@ text = "Press Start!
 
 [node name="title" type="RichTextLabel" parent="MPFCarousel"]
 top_level = true
+layout_mode = 0
 offset_left = 3.0
 offset_top = 1148.0
 offset_right = 795.0
@@ -85,6 +88,7 @@ text = "Press Start!
 
 [node name="credits" type="Label" parent="MPFCarousel"]
 top_level = true
+layout_mode = 0
 offset_top = 1148.0
 offset_right = 800.0
 offset_bottom = 1258.0
@@ -138,6 +142,7 @@ text = "Press Start!
 
 [node name="featured_bands" type="Label" parent="MPFCarousel"]
 top_level = true
+layout_mode = 0
 offset_top = 1148.0
 offset_right = 800.0
 offset_bottom = 1258.0
@@ -171,6 +176,7 @@ scroll_active = false
 shortcut_keys_enabled = false
 
 [node name="last_scores_1p" type="RichTextLabel" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 1148.0
 offset_right = 675.0
@@ -199,6 +205,7 @@ theme_override_font_sizes/normal_font_size = 100
 text = "Press Start!"
 
 [node name="last_scores_2p" type="RichTextLabel" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 1148.0
 offset_right = 675.0
@@ -227,6 +234,7 @@ theme_override_font_sizes/normal_font_size = 100
 text = "Press Start!"
 
 [node name="last_scores_3p" type="RichTextLabel" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 1148.0
 offset_right = 675.0
@@ -255,6 +263,7 @@ theme_override_font_sizes/normal_font_size = 100
 text = "Press Start!"
 
 [node name="last_scores_4p" type="RichTextLabel" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 1148.0
 offset_right = 675.0
@@ -283,6 +292,7 @@ theme_override_font_sizes/normal_font_size = 100
 text = "Press Start!"
 
 [node name="high_scores" type="RichTextLabel" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 1148.0
 offset_right = 675.0
