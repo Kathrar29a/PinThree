@@ -9,10 +9,10 @@ switches:
   s_door_open: # o                  3-#-# numbered switches are hooked to satelite board
     number: "3-0-16"
     tags: service_door_open, power_off
-  s_srv_select: #Right
+  s_srv_enter: #Right (Select)
     number: "3-0-17"
     tags: service_enter
-  s_srv_back: #Left
+  s_srv_esc: #Left   (Back)
     number: "3-0-18"
     tags: service_esc
   s_srv_up: #Up
