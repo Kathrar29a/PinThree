@@ -80,7 +80,7 @@ switches:
     tags: kickback  #playfieldactive (auto)
   s_right_scoop_opto:
     number: "0-0-11"
-    #type: NC
+    type: NC
   s_skillshot_red_opto:
     number: "0-0-27"
     type: NC
@@ -229,7 +229,7 @@ switches:
     number: "1-0-64"
   s_m34_upper_lock_2:
     number: "1-0-65"
-  s_m35_bonus_lane_left:
+  s_m35_bonus_lane_left: #     N
     number: "1-0-66"
     tags: playfield_active
     ignore_window_ms: 250ms
@@ -246,7 +246,7 @@ switches:
     number: "1-0-71"
   s_m42_upper_lock_1:
     number: "1-0-73"
-  s_m43_bonus_lane_middle:
+  s_m43_bonus_lane_middle:    #   B
     number: "1-0-74"
     tags: playfield_active
     ignore_window_ms: 250ms
@@ -269,7 +269,7 @@ switches:
     number: "1-0-81"
     tags: playfield_active
     ignore_window_ms: 250ms
-  s_m51_bonus_lane_right:
+  s_m51_bonus_lane_right:  #  N
     number: "1-0-82"
     tags: playfield_active
   s_m52_upper_center_target:
