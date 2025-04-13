@@ -16,29 +16,29 @@
 
 
 
-light_stripes:
- popRing:
-   start_channel: 1-0-311    #0-0-480
-   number_template: 1-0-{}
-   light_template:
-     tags: l_pop
-     type: grbw
-     subtype: led
-     color_correction_profile: corr_pop
-   count: 8
- starRing:
-   start_channel: 1-0-343    #0-0-512
-   number_template: 1-0-{}
-   light_template:
-     tags: l_star
-     type: grb
-     subtype: led
-     color_correction_profile: corr_star
-   count: 8
+#light_stripes:
+# popRing:
+#   start_channel: 1-0-311    #0-0-480
+#   number_template: 1-0-{}
+#   light_template:
+#     tags: l_pop
+#     type: grbw
+#     subtype: led
+#     color_correction_profile: corr_pop
+#   count: 8
+# starRing:
+#   start_channel: 1-0-343    #0-0-512
+#   number_template: 1-0-{}
+#   light_template:
+#    tags: l_star
+#     type: grb
+#     subtype: led
+#     color_correction_profile: corr_star
+#  count: 8
 
-light_settings:
- color_correction_profiles:
-   corr_star:
-     whitepoint: [0.9, 1, 0.85]
-   corr_pop:
-     whitepoint: [0.85, 0.85, 0.85]
+#light_settings:
+# color_correction_profiles:
+#   corr_star:
+#     whitepoint: [0.9, 1, 0.85]
+#   corr_pop:
+#     whitepoint: [0.85, 0.85, 0.85]
