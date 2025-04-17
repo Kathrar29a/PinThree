@@ -8,7 +8,7 @@ hardware:
   segment_displays: light_segment_displays
 
 opp:
- ports: COM7, COM5, COM6
+ ports: COM5, COM4, COM3
 
 #Can Use the USB ports defined by your OS for the two STM32 boards or
 # ports: /dev/ttyACM0, /dev/ttyACM1

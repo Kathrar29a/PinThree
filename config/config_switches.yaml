@@ -20,7 +20,7 @@ switches:
     tags: service_up
   s_srv_down: #Down
     number: "3-0-20"
-    tags: servise_down
+    tags: service_down
   s_action_left:
     number: "3-0-21"
     tags: action_left
