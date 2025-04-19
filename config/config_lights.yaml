@@ -1571,7 +1571,7 @@ lights:
     start_channel: 1-0-87
     type:  grb
     subtype: led
-    labeel: "Left Outlane"
+    label: "Left Outlane"
     tags: inserts, group1
   l_kickback:
     start_channel: 1-0-90
