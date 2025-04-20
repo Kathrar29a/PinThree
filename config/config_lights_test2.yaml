@@ -30,11 +30,11 @@
 #   start_channel: 1-0-343    #0-0-512
 #   number_template: 1-0-{}
 #   light_template:
-#    tags: l_star
+#     tags: l_star
 #     type: grb
 #     subtype: led
 #     color_correction_profile: corr_star
-#  count: 8
+#   count: 8
 
 #light_settings:
 # color_correction_profiles:
