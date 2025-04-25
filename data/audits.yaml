@@ -1,91 +1,95 @@
 events:
   game_ended: 3
-  game_started: 6
+  game_started: 14
 missing_switches:
-  s_3b_drop_left_opto: 6
-  s_3b_drop_middle_opto: 6
-  s_3b_drop_right_opto: 6
-  s_action_left: 6
-  s_action_right: 6
-  s_door_open: 3
-  s_kickback: 6
-  s_launch_button: 1
-  s_left_flipper_lower: 6
-  s_left_flipper_lower_EOS: 6
-  s_left_flipper_upper: 6
-  s_left_flipper_upper_EOS: 6
-  s_left_pop_bumper: 6
-  s_left_slingshot: 6
-  s_lower_pop_bumper: 6
-  s_m10_upper_ramp_kicker: 6
-  s_m11_upper_3b_left: 6
-  s_m12_upper_ramp_in_gate: 6
-  s_m13_left_ramp_lock2: 6
-  s_m14_center_spinner: 6
-  s_m15_left_inlane: 6
-  s_m16_trough2: 2
-  s_m18_upper_diverter_closed: 6
-  s_m19_upper_3b_middle: 6
-  s_m20_upper_sling_score: 6
-  s_m21_left_ramp_lock_3: 6
-  s_m22_center_target: 6
-  s_m23_left_sling_score: 6
-  s_m24_trough3: 6
-  s_m26_upper_lock_3: 6
-  s_m27_upper_3b_right: 6
-  s_m28_left_pop_score: 6
-  s_m29_secret_lock_1: 6
-  s_m30_right_saucer: 6
-  s_m31_left_lane_change: 6
-  s_m32_trough4: 6
-  s_m33_service_mode: 6
-  s_m34_upper_lock_2: 6
-  s_m35_bonus_lane_left: 1
-  s_m36_right_pop_score: 6
-  s_m37_secret_lock_2: 6
-  s_m38_skillshot_yellow_gate: 6
-  s_m39_right_lane_change: 6
-  s_m40_trough5: 6
-  s_m42_upper_lock_1: 6
-  s_m43_bonus_lane_middle: 1
-  s_m44_lower_pop_score: 6
-  s_m45_lower_3b_left: 6
-  s_m46_skillshot_green_gate: 6
-  s_m47_right_sling_score: 6
-  s_m48_trough6: 6
-  s_m50_upper_band_score: 6
-  s_m51_bonus_lane_right: 1
-  s_m52_upper_center_target: 6
-  s_m53_lower_3b_middle: 6
-  s_m54_right_lane_change: 6
-  s_m55_right_outlane: 6
-  s_m56_trough7: 6
-  s_m58_right_loop_gate: 6
-  s_m59_xtraball_saucer: 6
-  s_m5_left_ramp_lock1: 6
-  s_m60_right_spinner: 6
-  s_m61_lower_3b_right: 6
-  s_m62_skillshot_green_award: 6
-  s_m63_right_outlane: 6
-  s_m64_plunger_lane: 1
-  s_m6_left_saucer: 6
-  s_m7_left_outlane: 6
-  s_m8_trough1: 1
-  s_plumb_tilt: 6
-  s_right_flipper_lower: 6
-  s_right_flipper_lower_EOS: 6
-  s_right_flipper_upper: 6
-  s_right_flipper_upper_EOS: 6
-  s_right_pop_bumper: 6
-  s_right_scoop_opto: 6
-  s_right_slingshot: 6
-  s_roll_tilt: 6
-  s_skillshot_red_opto: 6
-  s_skillshot_yellow_opto: 6
-  s_slam_tilt: 6
-  s_srv_back: 6
-  s_trough8_opto: 6
-  s_trough_jam_opto: 6
+  s_3b_drop_left_opto: 5
+  s_3b_drop_middle_opto: 5
+  s_3b_drop_right_opto: 5
+  s_action_left: 14
+  s_action_right: 14
+  s_door_open: 11
+  s_kickback: 14
+  s_launch_button: 2
+  s_left_flipper_lower: 2
+  s_left_flipper_lower_EOS: 2
+  s_left_flipper_upper: 14
+  s_left_flipper_upper_EOS: 14
+  s_left_pop_bumper: 14
+  s_left_slingshot: 14
+  s_lower_pop_bumper: 14
+  s_m10_upper_ramp_kicker: 14
+  s_m11_upper_3b_left: 14
+  s_m12_upper_ramp_in_gate: 14
+  s_m13_left_ramp_lock2: 14
+  s_m14_center_spinner: 14
+  s_m15_left_inlane: 14
+  s_m16_trough2: 10
+  s_m18_upper_diverter_closed: 14
+  s_m19_upper_3b_middle: 14
+  s_m20_upper_sling_score: 14
+  s_m21_left_ramp_lock_3: 14
+  s_m22_center_target: 14
+  s_m23_left_sling_score: 14
+  s_m24_trough3: 14
+  s_m26_upper_lock_3: 14
+  s_m27_upper_3b_right: 14
+  s_m28_left_pop_score: 14
+  s_m29_secret_lock_1: 14
+  s_m30_right_saucer: 14
+  s_m31_left_lane_change: 14
+  s_m32_trough4: 14
+  s_m33_service_mode: 14
+  s_m34_upper_lock_2: 14
+  s_m35_bonus_lane_left: 2
+  s_m36_right_pop_score: 14
+  s_m37_secret_lock_2: 14
+  s_m38_skillshot_yellow_gate: 14
+  s_m39_right_lane_change: 14
+  s_m40_trough5: 14
+  s_m42_upper_lock_1: 14
+  s_m43_bonus_lane_middle: 2
+  s_m44_lower_pop_score: 14
+  s_m45_lower_3b_left: 14
+  s_m46_skillshot_green_gate: 14
+  s_m47_right_sling_score: 14
+  s_m48_trough6: 14
+  s_m50_upper_band_score: 14
+  s_m51_bonus_lane_right: 2
+  s_m52_upper_center_target: 14
+  s_m53_lower_3b_middle: 14
+  s_m54_right_lane_change: 14
+  s_m55_right_outlane: 14
+  s_m56_trough7: 14
+  s_m58_right_loop_gate: 14
+  s_m59_xtraball_saucer: 14
+  s_m5_left_ramp_lock1: 14
+  s_m60_right_spinner: 14
+  s_m61_lower_3b_right: 14
+  s_m62_skillshot_green_award: 14
+  s_m63_right_outlane: 14
+  s_m64_plunger_lane: 2
+  s_m6_left_saucer: 14
+  s_m7_left_outlane: 14
+  s_m8_trough1: 9
+  s_plumb_tilt: 14
+  s_right_flipper_lower: 14
+  s_right_flipper_lower_EOS: 14
+  s_right_flipper_upper: 14
+  s_right_flipper_upper_EOS: 14
+  s_right_pop_bumper: 14
+  s_right_scoop_opto: 14
+  s_right_slingshot: 14
+  s_roll_tilt: 14
+  s_skillshot_red_opto: 14
+  s_skillshot_yellow_opto: 14
+  s_slam_tilt: 14
+  s_srv_back: 14
+  s_srv_down: 8
+  s_srv_select: 8
+  s_srv_up: 8
+  s_start: 8
+  s_trough8_opto: 14
+  s_trough_jam_opto: 14
 player:
   score:
     average: 0
@@ -95,16 +99,16 @@ player:
     - 0
     total: 3
 switches:
-  s_3b_drop_left_opto: 0
-  s_3b_drop_middle_opto: 0
-  s_3b_drop_right_opto: 0
+  s_3b_drop_left_opto: 6
+  s_3b_drop_middle_opto: 5
+  s_3b_drop_right_opto: 5
   s_action_left: 0
   s_action_right: 0
   s_door_open: 1
   s_kickback: 0
-  s_launch_button: 6
-  s_left_flipper_lower: 0
-  s_left_flipper_lower_EOS: 0
+  s_launch_button: 9
+  s_left_flipper_lower: 18
+  s_left_flipper_lower_EOS: 11
   s_left_flipper_upper: 0
   s_left_flipper_upper_EOS: 0
   s_left_pop_bumper: 0
@@ -133,21 +137,21 @@ switches:
   s_m32_trough4: 0
   s_m33_service_mode: 0
   s_m34_upper_lock_2: 0
-  s_m35_bonus_lane_left: 21
+  s_m35_bonus_lane_left: 48
   s_m36_right_pop_score: 0
   s_m37_secret_lock_2: 0
   s_m38_skillshot_yellow_gate: 0
   s_m39_right_lane_change: 0
   s_m40_trough5: 0
   s_m42_upper_lock_1: 0
-  s_m43_bonus_lane_middle: 28
+  s_m43_bonus_lane_middle: 35
   s_m44_lower_pop_score: 0
   s_m45_lower_3b_left: 0
   s_m46_skillshot_green_gate: 0
   s_m47_right_sling_score: 0
   s_m48_trough6: 0
   s_m50_upper_band_score: 0
-  s_m51_bonus_lane_right: 10
+  s_m51_bonus_lane_right: 41
   s_m52_upper_center_target: 0
   s_m53_lower_3b_middle: 0
   s_m54_right_lane_change: 0
@@ -160,7 +164,7 @@ switches:
   s_m61_lower_3b_right: 0
   s_m62_skillshot_green_award: 0
   s_m63_right_outlane: 0
-  s_m64_plunger_lane: 13
+  s_m64_plunger_lane: 16
   s_m6_left_saucer: 0
   s_m7_left_outlane: 0
   s_m8_trough1: 3

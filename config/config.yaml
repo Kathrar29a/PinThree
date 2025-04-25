@@ -92,40 +92,40 @@ flippers:
         main_coil: c_flipper_left_main
         hold_coil: c_flipper_left_hold
         activation_switch: s_left_flipper_lower
-        eos_switch: s_left_flipper_lower_EOS
-        use_eos: true
-        repulse_on_eos_open: true
-        eos_active_ms_before_repulse: 500
+        #eos_switch: s_left_flipper_lower_EOS
+        #use_eos: true
+        #repulse_on_eos_open: true
+        #eos_active_ms_before_repulse: 500
         enable_events: ball_started, flipper_on
         disable_events: ball_will_end, flipper_off
     left_flipper_upper:
         main_coil: c_flipper_left_upper_main
         hold_coil: c_flipper_left_upper_hold
         activation_switch: s_left_flipper_upper
-        eos_switch: s_left_flipper_upper_EOS
-        use_eos: true
-        repulse_on_eos_open: true
-        eos_active_ms_before_repulse: 500
+        #eos_switch: s_left_flipper_upper_EOS
+        #use_eos: true
+        #repulse_on_eos_open: true
+        #eos_active_ms_before_repulse: 500
         enable_events: ball_started, flipper_on
         disable_events: ball_will_end, flipper_off
     right_flipper:
         main_coil: c_flipper_right_main
         hold_coil: c_flipper_right_hold
         activation_switch: s_right_flipper_lower
-        eos_switch: s_right_flipper_lower_EOS
-        use_eos: true
-        repulse_on_eos_open: true
-        eos_active_ms_before_repulse: 500
+        #eos_switch: s_right_flipper_lower_EOS
+        #use_eos: true
+        #repulse_on_eos_open: true
+        #eos_active_ms_before_repulse: 500
         enable_events: ball_started, flipper_on
         disable_events: ball_will_end, flipper_off
     right_flipper_upper:
         main_coil: c_flipper_right_upper_main
         hold_coil: c_flipper_right_upper_hold
         activation_switch: s_right_flipper_upper
-        eos_switch: s_right_flipper_upper_EOS
-        use_eos: true
-        repulse_on_eos_open: true
-        eos_active_ms_before_repulse: 500
+        #eos_switch: s_right_flipper_upper_EOS
+        #use_eos: true
+        #repulse_on_eos_open: true
+        #eos_active_ms_before_repulse: 500
         enable_events: ball_started, flipper_on
         disable_events: ball_will_end, flipper_off
 

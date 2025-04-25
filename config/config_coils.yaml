@@ -2,11 +2,7 @@
 
 # Battle Of The Bands v1.3  MPF 0.80 / GMC 0.1.2 / G'Doh! 4.3
 
-#coils:
-#  c_trough_eject:
-#    number:
 
-#CC from V1.2
 coils:
   c_flipper_left_main:
     number: "0-0-8"  # Left Flipper Main Coil
@@ -21,7 +17,7 @@ coils:
     number: "0-0-11"  # Left Flipper Hold Coil
     allow_enable: true  # required to allow this coil to be held in the on state
   c_left_pop_bumper:
-    number: "0-0-0"
+    number: "1-0-4"
     default_pulse_ms: 22
     default_pulse_power: "0.44"
     default_recycle: True
@@ -31,13 +27,13 @@ coils:
     number: "0-0-12"
     default_pulse_ms: 20
   c_xtraball_saucer:
-    number: "0-0-13"
+    number: "1-0-3"
     default_pulse_ms: 20
   c_secret_lock:
-    number: "0-0-14"
+    number: "3-0-6"
     default_pulse_ms: 20
   c_right_pop_bumper:
-    number: "0-0-15"
+    number: "0-0-0"
     default_pulse_ms: 22
     default_pulse_power: "0.44"
     default_recycle: True
@@ -63,36 +59,36 @@ coils:
     number: "0-0-3" # Right Flipper Hold Coil
     allow_enable: true # required to allow this coil to be held in the on state
   c_left_lock:
-    number: "0-0-2"
+    number: "3-0-5"
     default_pulse_ms: 20
   c_left_saucer:
-    number: "0-0-1"
+    number: "0-0-14"
     default_pulse_ms: 20
   c_lower_pop_bumper:
-    number: "1-0-0"
+    number: "0-0-15"
     default_pulse_ms: 22
     default_pulse_power: "0.44"
     default_recycle: True
     platform_settings:
         recycle_factor: 1
   c_left_slingshot:
-    number: "1-0-7"
+    number: "0-0-13"
     default_pulse_ms: 22
     default_pulse_power: "0.65"
     default_recycle: True
     platform_settings:
         recycle_factor: 4
   c_trough_eject:
-    number: "1-0-6" # ball trough eject coil
+    number: "1-0-7" # ball trough eject coil
     default_pulse_ms: 20
   c_upper_ramp_kicker:
-    number: "1-0-5"
+    number: "3-0-7"
     default_pulse_ms: 20
   c_upper_lock:
-    number: "1-0-4"
+    number: "3-0-0"
     default_pulse_ms: 20
   c_drop_target_reset:
-    number: "1-0-3"
+    number: "3-0-4"
     default_pulse_ms: 55
     default_pulse_power: "0.5"
   c_HV_enable:  # High Voltage Coils Enable RELAY
@@ -101,30 +97,28 @@ coils:
   c_spec_coils_enable:  # Special Coils Enable RELAY (flippers)
     number: "1-0-1"
     allow_enable: true
-   # number: 3-0-0 possible DT auto Drop
-  # number: 3-0-7 possible DT auto Drop
-  # key pin
-  # number: 3-0-6 possible DT auto Drop
-  # number: 3-0-5 possible right out lane gate
+   # number: 3-0-3 possible DT auto Drop
+  # number: 3-0-2 possible DT auto Drop
+  # number: 3-0-1 possible DT auto Drop
+  # number: 0-0-2 possible right out lane gate
   c_plunger:  # auto shooter coil
-    number: "3-0-4"
+    number: "1-0-0"
     default_pulse_ms: 20
   c_skill_kicker:
-    number: "3-0-3"
+    number: "1-0-6"
     default_pulse_ms: 20
   c_right_scoop:
-    number: "3-0-2"
+    number: "0-0-1"
     default_pulse_ms: 20
   c_right_saucer:
-    number: "3-0-1"
+    number: "1-0-5"
     default_pulse_ms: 20
 
 
-#CC from V1.2
 autofire_coils:  # version 1.2
   left_slingshot:
-    coil: c_left_slingshot # 1-0-7
-    switch: s_left_slingshot # 1-0-2
+    coil: c_left_slingshot # 0-0-13
+    switch: s_left_slingshot # 0-0-27
     enable_events: ball_started, enableAutofire
     disable_events: ball_will_end, disableAutofire, shutdown
   right_slingshot:
@@ -133,23 +127,23 @@ autofire_coils:  # version 1.2
     enable_events: ball_started, enableAutofire
     disable_events: ball_will_end, disableAutofire, shutdown
   left_pop_bumper:
-    coil: c_left_pop_bumper # 0-0-0
-    switch: s_left_pop_bumper # 0-0-9
+    coil: c_left_pop_bumper # 1-0-4
+    switch: s_left_pop_bumper # 1-0-2
     enable_events: ball_started, enableAutofire
     disable_events: ball_will_end, disableAutofire, shutdown
   right_pop_bumper:
-    coil: c_right_pop_bumper # 0-0-15
+    coil: c_right_pop_bumper # 0-0-0
     switch: s_right_pop_bumper # 0-0-25
     enable_events: ball_started, enableAutofire
     disable_events: ball_will_end, disableAutofire, shutdown
   lower_pop_bumper:
-    coil: c_lower_pop_bumper # 1-0-0
-    switch: s_lower_pop_bumper # 1-0-1
+    coil: c_lower_pop_bumper # 0-0-15
+    switch: s_lower_pop_bumper # 0-0-26
     enable_events: ball_started, enableAutofire
     disable_events: ball_will_end, disableAutofire, shutdown
   kickback:
-    coil: c_kickback # 1-0-7
-    switch: s_kickback # 1-0-2
+    coil: c_kickback # 0-0-12
+    switch: s_kickback # 0-0-10
     enable_events: ball_started, enableAutofire
     disable_events: ball_will_end, disableAutofire, shutdown
 
