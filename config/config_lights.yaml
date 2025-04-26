@@ -2617,6 +2617,7 @@ neoseg_displays:
     #start_channel: "3-0-0"
     start_channel: "3-0-224"
     size: 8digit
+    label: "Player 1 neoSeg"
     light_template:
       type: w
       subtype: led
@@ -2626,6 +2627,7 @@ neoseg_displays:
     #start_channel: "3-0-120"
     start_channel: "3-0-344"
     size: 8digit
+    label: "Player 2 neoSeg"
     light_template:
       type: w
       subtype: led
@@ -2635,6 +2637,7 @@ neoseg_displays:
     #start_channel: "3-0-240"
     start_channel: "3-0-464"
     size: 8digit
+    label: "Player 3 neoSeg"
     light_template:
       type: w
       subtype: led
@@ -2644,6 +2647,7 @@ neoseg_displays:
     #start_channel: "3-0-360"
     start_channel: "3-0-584"
     size: 8digit
+    label: "Player 4 neoSeg"
     light_template:
       type: w
       subtype: led
@@ -2653,6 +2657,7 @@ neoseg_displays:
     #start_channel: "3-0-480"
     start_channel: "3-0-704"
     size: 2digit
+    label: "Ball in Play neoSeg"
     light_template:
       type: w
       subtype: led
@@ -2662,6 +2667,7 @@ neoseg_displays:
     #start_channel: "3-0-510"
     start_channel: "3-0-734"
     size: 2digit
+    label: "Match neoSeg"
     light_template:
       type: w
       subtype: led
@@ -2703,7 +2709,6 @@ segment_displays:
     use_dots_for_commas: true
     default_transition_update_hz: 30
     update_method: replace
-    label: "Player 1 neoSeg"
     platform_settings:
       light_groups:
          - neoSeg_0
@@ -2715,7 +2720,6 @@ segment_displays:
     use_dots_for_commas: true
     default_transition_update_hz: 30
     update_method: replace
-    label: "Player 2 neoSeg"
     platform_settings:
       light_groups:
          - neoSeg_1
@@ -2727,7 +2731,6 @@ segment_displays:
     use_dots_for_commas: true
     default_transition_update_hz: 30
     update_method: replace
-    label: "Player 3 neoSeg"
     platform_settings:
       light_groups:
          - neoSeg_2
@@ -2739,7 +2742,6 @@ segment_displays:
     use_dots_for_commas: true
     default_transition_update_hz: 30
     update_method: replace
-    label: "Player 4 neoSeg"
     platform_settings:
       light_groups:
          - neoSeg_3
@@ -2752,7 +2754,6 @@ segment_displays:
     use_dots_for_commas: true
     default_transition_update_hz: 30
     update_method: replace
-    label: "Ball in Play neoSeg"
     platform_settings:
       light_groups:
         - neoSeg_4
@@ -2765,7 +2766,6 @@ segment_displays:
     use_dots_for_commas: true
     default_transition_update_hz: 30
     update_method: replace
-    label: "Match neoSeg"
     platform_settings:
       light_groups:
         - neoSeg_5

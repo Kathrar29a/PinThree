@@ -6,18 +6,23 @@
 coils:
   c_flipper_left_main:
     number: "0-0-8"  # Left Flipper Main Coil
+    label: "Left Lower Flipper Main"
     default_pulse_ms: 20
   c_flipper_left_hold:
     number: "0-0-9"  # Left Flipper Hold Coil
+    label: "Left Lower Flipper Hold"
     allow_enable: true  # required to allow this coil to be held in the on state
   c_flipper_left_upper_main:
     number: "0-0-10"  # Left Flipper Main Coil
+    label: "Left Upper Flipper Main"
     default_pulse_ms: 20
   c_flipper_left_upper_hold:
     number: "0-0-11"  # Left Flipper Hold Coil
+    label: "Left Upper Flipper Hold"
     allow_enable: true  # required to allow this coil to be held in the on state
   c_left_pop_bumper:
     number: "1-0-4"
+    label: "Left Pop Bumper"
     default_pulse_ms: 22
     default_pulse_power: "0.44"
     default_recycle: True
@@ -25,15 +30,19 @@ coils:
         recycle_factor: 1
   c_kickback:
     number: "0-0-12"
+    label: "Kickback"
     default_pulse_ms: 20
   c_xtraball_saucer:
     number: "1-0-3"
+    label: "Xtra Ball Saucer"
     default_pulse_ms: 20
   c_secret_lock:
     number: "3-0-6"
+    label: "Secret Lock Release"
     default_pulse_ms: 20
   c_right_pop_bumper:
     number: "0-0-0"
+    label: "Right Pop Bumper"
     default_pulse_ms: 22
     default_pulse_power: "0.44"
     default_recycle: True
@@ -41,6 +50,7 @@ coils:
         recycle_factor: 1
   c_right_slingshot:
     number: "0-0-7"
+    label: "Right Slingshot"
     default_pulse_ms: 22
     default_pulse_power: "0.65"
     default_recycle: True
@@ -48,24 +58,31 @@ coils:
         recycle_factor: 4
   c_flipper_right_main:
     number: "0-0-6" # Right Flipper Main Coil
+    label: "Right Lower Flipper Main"
     default_pulse_ms: 20
   c_flipper_right_hold:
     number: "0-0-5" # Right Flipper Hold Coil
+    label: "Right lower Flipper Hold"
     allow_enable: true # required to allow this coil to be held in the on state
   c_flipper_right_upper_main:
     number: "0-0-4" # Right Flipper Main Coil
+    Lavel: "Right Upper Flipper Main"
     default_pulse_ms: 20
   c_flipper_right_upper_hold:
     number: "0-0-3" # Right Flipper Hold Coil
+    label: "Right Upper Flipper Hold"
     allow_enable: true # required to allow this coil to be held in the on state
   c_left_lock:
     number: "3-0-5"
+    label: "Left Lock Release"
     default_pulse_ms: 20
   c_left_saucer:
     number: "0-0-14"
+    label: "Left Saucer"
     default_pulse_ms: 20
   c_lower_pop_bumper:
     number: "0-0-15"
+    label: "Lower Pop Bumper"
     default_pulse_ms: 22
     default_pulse_power: "0.44"
     default_recycle: True
@@ -73,6 +90,7 @@ coils:
         recycle_factor: 1
   c_left_slingshot:
     number: "0-0-13"
+    label: "Left Slingshot"
     default_pulse_ms: 22
     default_pulse_power: "0.65"
     default_recycle: True
@@ -80,38 +98,64 @@ coils:
         recycle_factor: 4
   c_trough_eject:
     number: "1-0-7" # ball trough eject coil
+    label: "Trough Eject"
     default_pulse_ms: 20
   c_upper_ramp_kicker:
     number: "3-0-7"
+    label: "Upper Ramp Kicker"
     default_pulse_ms: 20
   c_upper_lock:
     number: "3-0-0"
+    label: "Upper Lock Release"
     default_pulse_ms: 20
   c_drop_target_reset:
     number: "3-0-4"
+    label: "Drop Target Reset"
     default_pulse_ms: 55
     default_pulse_power: "0.5"
   c_HV_enable:  # High Voltage Coils Enable RELAY
     number: "1-0-2"
+    label: "HV Enable Relay"
     allow_enable: true
   c_spec_coils_enable:  # Special Coils Enable RELAY (flippers)
     number: "1-0-1"
+    label: "Special(Flipper) Coils Enable Relay"
     allow_enable: true
-   # number: 3-0-3 possible DT auto Drop
-  # number: 3-0-2 possible DT auto Drop
-  # number: 3-0-1 possible DT auto Drop
-  # number: 0-0-2 possible right out lane gate
+  c_left_drop_target_drop:
+    number: "3-0-3"
+    label: "Left Drop Target Drop"
+    default_pulse_ms: 55
+    default_pulse_power: "0.5"
+  c_middle_drop_target_drop:
+    number: "3-0-2"
+    label: "Middle Drop Target Drop"
+    default_pulse_ms: 55
+    default_pulse_power: "0.5"
+  c_right_drop_target_drop:
+    number: "3-0-1"
+    label: "Right Drop Target Drop"
+    default_pulse_ms: 55
+    default_pulse_power: "0.5"
+  c_right_outlane_gate:
+    number: "0-0-2"
+    label: "Right Outlane Gate"
+    default_pulse_ms: 55
+    default_pulse_power: "0.5"
   c_plunger:  # auto shooter coil
     number: "1-0-0"
+    label: "Auto Plunger"
     default_pulse_ms: 20
   c_skill_kicker:
     number: "1-0-6"
+    label: "Skill Kicker"
     default_pulse_ms: 20
   c_right_scoop:
     number: "0-0-1"
+    label: "Right Scoop"
     default_pulse_ms: 20
   c_right_saucer:
     number: "1-0-5"
+    label: "Right Saucer"
     default_pulse_ms: 20
 
 
