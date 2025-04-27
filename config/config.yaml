@@ -75,8 +75,6 @@ timed_switches:
         events_when_active: end_game
 
 virtual_platform_start_active_switches:
-#  - s_trough1
-#  - s_trough2
   - s_m8_trough1
   - s_m16_trough2
   - s_m24_trough3
