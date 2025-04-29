@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd2v7mp8r0uwi"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_tmrdu"]
+[ext_resource type="Texture2D" uid="uid://cro2mm214c8o" path="res://images/mini/Botb Pf v2 (9).jpeg" id="2_bbgqr"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_ph0ei"]
+
+[node name="BaseMiniSlide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tmrdu")
+
+[node name="title" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(400, 640)
+texture = ExtResource("2_bbgqr")
+
+[node name="PlayerText" type="RichTextLabel" parent="."]
+top_level = true
+offset_left = 76.0
+offset_top = 25.0
+offset_right = 440.0
+offset_bottom = 110.0
+theme_override_colors/default_color = Color(0.985281, 0.985281, 0.985281, 1)
+theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 60
+text = "Player    :"
+
+[node name="player_number" type="Label" parent="."]
+top_level = true
+offset_left = 267.0
+offset_top = 25.0
+offset_right = 324.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.985281, 0.985281, 0.985281, 1)
+theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 60
+text = "1"
+script = ExtResource("4_ph0ei")
+variable_name = "number"
+comma_separate = true
+min_digits = 2
+
+[node name="player_score" type="Label" parent="."]
+top_level = true
+offset_left = 404.0
+offset_top = 25.0
+offset_right = 833.0
+offset_bottom = 108.0
+theme_override_colors/font_color = Color(0.985281, 0.985281, 0.985281, 1)
+theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 60
+text = "12,345,678"
+script = ExtResource("4_ph0ei")
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+
+[node name="BallText" type="RichTextLabel" parent="."]
+top_level = true
+offset_left = 306.0
+offset_top = 115.0
+offset_right = 454.0
+offset_bottom = 204.0
+theme_override_colors/default_color = Color(0.985281, 0.985281, 0.985281, 1)
+theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/normal_font_size = 60
+text = "Ball:"
+
+[node name="player_ball" type="Label" parent="."]
+top_level = true
+offset_left = 461.0
+offset_top = 115.0
+offset_right = 537.0
+offset_bottom = 198.0
+theme_override_colors/font_color = Color(0.985281, 0.985281, 0.985281, 1)
+theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 20
+theme_override_font_sizes/font_size = 60
+text = "1
+"
+script = ExtResource("4_ph0ei")
+variable_name = "ball"
+comma_separate = true
+min_digits = 1

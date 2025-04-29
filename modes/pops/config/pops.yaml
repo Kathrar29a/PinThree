@@ -1,0 +1,21 @@
+#config_version=6
+
+mode:
+  start_events: start_mode_pops
+  stop_events: stop_mode_pops
+  priority: 200
+
+shots:
+  left_pop:
+    switch: s_m28_left_pop_score
+  right_pop:
+    switch: s_m36_right_pop_score
+  lower_pop:
+    switch: s_m44_lower_pop_score
+
+shot_groups:
+  pops: left_pop, right_pop, lower_pop
+
+variable_player:
+  pops_hit:
+    score: 5

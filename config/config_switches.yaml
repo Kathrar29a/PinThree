@@ -62,19 +62,19 @@ switches:
   # Coils must be on the same processor as their associated direct switch
   #
   #
-  s_left_pop_bumper:
+  s_left_pop_bumper:  # z
     number: "1-0-2"
     tags: pops  #playfieldactive (auto)
   s_kickback:
     number: "0-0-10"
     tags: kickback  #playfieldactive (auto)
-  s_right_pop_bumper:
+  s_right_pop_bumper:  # x
     number: "0-0-25"
     tags: pops  #playfieldactive (auto)
   s_right_slingshot:
     number: "0-0-24"
     tags: slings   #playfield active (auto)
-  s_lower_pop_bumper:
+  s_lower_pop_bumper:  # c
     number: "0-0-26"
     tags: pops  #playfieldactive (auto)
   s_left_slingshot:
