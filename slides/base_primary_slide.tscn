@@ -18,7 +18,7 @@ texture = ExtResource("2_knoqf")
 top_level = true
 offset_left = 237.0
 offset_top = 700.0
-offset_right = 601.0
+offset_right = 638.0
 offset_bottom = 810.0
 theme_override_colors/default_color = Color(0.985281, 0.985281, 0.985281, 1)
 theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)
@@ -44,13 +44,13 @@ text = "1"
 script = ExtResource("4_kvi3j")
 variable_name = "number"
 comma_separate = true
-min_digits = 2
+min_digits = 1
 
 [node name="player_score" type="Label" parent="BB Background"]
 top_level = true
-offset_left = 631.0
+offset_left = 650.0
 offset_top = 700.0
-offset_right = 1060.0
+offset_right = 1079.0
 offset_bottom = 810.0
 theme_override_colors/font_color = Color(0.985281, 0.985281, 0.985281, 1)
 theme_override_colors/font_shadow_color = Color(0.0156863, 0, 0.466667, 1)

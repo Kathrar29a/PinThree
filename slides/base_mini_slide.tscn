@@ -16,6 +16,7 @@ texture = ExtResource("2_bbgqr")
 
 [node name="PlayerText" type="RichTextLabel" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = 76.0
 offset_top = 25.0
 offset_right = 440.0
@@ -30,6 +31,7 @@ text = "Player    :"
 
 [node name="player_number" type="Label" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = 267.0
 offset_top = 25.0
 offset_right = 324.0
@@ -44,10 +46,11 @@ text = "1"
 script = ExtResource("4_ph0ei")
 variable_name = "number"
 comma_separate = true
-min_digits = 2
+min_digits = 1
 
 [node name="player_score" type="Label" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = 404.0
 offset_top = 25.0
 offset_right = 833.0
@@ -66,6 +69,7 @@ min_digits = 2
 
 [node name="BallText" type="RichTextLabel" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = 306.0
 offset_top = 115.0
 offset_right = 454.0
@@ -80,6 +84,7 @@ text = "Ball:"
 
 [node name="player_ball" type="Label" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = 461.0
 offset_top = 115.0
 offset_right = 537.0

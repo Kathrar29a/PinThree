@@ -66,7 +66,7 @@ coils:
     allow_enable: true # required to allow this coil to be held in the on state
   c_flipper_right_upper_main:
     number: "0-0-4" # Right Flipper Main Coil
-    Lavel: "Right Upper Flipper Main"
+    label: "Right Upper Flipper Main"
     default_pulse_ms: 20
   c_flipper_right_upper_hold:
     number: "0-0-3" # Right Flipper Hold Coil

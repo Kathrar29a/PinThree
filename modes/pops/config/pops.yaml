@@ -14,7 +14,8 @@ shots:
     switch: s_m44_lower_pop_score
 
 shot_groups:
-  pops: left_pop, right_pop, lower_pop
+  pops:
+    shots: left_pop, right_pop, lower_pop
 
 variable_player:
   pops_hit:

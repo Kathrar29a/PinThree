@@ -28,6 +28,7 @@ modes:
   - base
   - tilt
   - service
+  - pops
 
 # cc from V1.2
 settings:
